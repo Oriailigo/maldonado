@@ -1,0 +1,133 @@
+/*
+
+  Layer Template
+
+  http://www.templatemo.com/preview/templatemo_438_layer
+
+*/
+
+
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+
+
+
+
+
+.orange {
+
+  color: #C60;
+
+}
+
+
+
+.white {
+
+  color: #FFF;
+
+}
+
+
+
+/*BASIC*/
+
+
+
+
+
+
+p {
+
+  color: #787878;
+
+  line-height: 22px;
+
+}
+
+
+
+
+.single-item {
+
+  background-color: #fff;
+
+  text-align: center;
+
+  margin-bottom: 20px;
+
+}
+
+
+
+.single-item:hover i {
+
+  color: #fff;
+
+  background-color: #f23b3b;
+
+  cursor: pointer;
+
+  -webkit-transition: all 0.5s ease 0s;
+
+          transition: all 0.5s ease 0s;
+
+  border-color: transparent;
+
+}
+
+
+
+.single-item i {
+
+  margin-top: 30px;
+
+  font-size: 26px;
+
+  color: #f23b3b;
+
+  border: 1px solid #e7e7e7;
+
+  border-radius: 50%;
+
+  width: 80px;
+
+  height: 80px;
+
+  line-height: 80px;
+
+  display: inline-block;
+
+  text-align: center;
+
+}
+
+
+
+.single-item h2 {
+
+  font-size: 15px;
+
+  color: #1e1e1e;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+}
+
+
+
+.single-item p {
+
+  margin-top: 10px;
+
+  margin-left: 20px;
+
+  margin-right: 20px;
+
+  padding-bottom: 20px;
+
+}
+
+

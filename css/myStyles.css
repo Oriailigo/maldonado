@@ -1,0 +1,12 @@
+.min-text{
+    font-size: 0.5rem;
+}
+.portada{
+    background-image: url("../img/portada.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* height: 100vh; */
+    width: 100%;
+}
