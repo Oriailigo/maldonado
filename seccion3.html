@@ -21,6 +21,7 @@
         <link href="css/aprendiendo/bootstrap-icons.css" rel="stylesheet">
 
         <link href="css/aprendiendo/templatemo-ebook-landing.css" rel="stylesheet">
+        <link href="css/nav.css" rel="stylesheet">
 <!--
 
 TemplateMo 588 ebook landing
@@ -38,51 +39,44 @@ https://templatemo.com/tm-588-ebook-landing
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
                         <i class="navbar-brand-icon bi-book me-2"></i>
-                        <span>Home</span>
+                        <span>Maldonado</span>
                     </a>
 
-                    <!-- <div class="d-lg-none ms-auto me-3">
-                        <a href="#" class="btn custom-btn custom-border-btn btn-naira btn-inverted">
-                            <i class="btn-icon bi-cloud-download"></i>
-                            <span>Download</span>
-                        </a>
-                    </div>
-    
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button tabindex="0" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
     
-                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <nav class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-lg-auto me-lg-4">
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="index.html">Home</a>
+                                <a class="nav-link" href="index.html" id="previo">Previo a la inundación</a>
+                                <ul role="menu">
+                                    <li><a class="nav-link click-scroll sub-a" href="#">Aprendiendo sobre la inundaciones</a></li>
+                                    <li role="menuitem" aria-haspopup="true">
+                                        <a class="nav-link sub-a masItem" href="#" id="miElemento">Conociendo el territorio</a>
+                                        <ul role="menu" class="sub-item">
+                                            <li><a class="nav-link click-scroll sub-a"  href="#">Submenú 2.1</a></li>
+                                            <li><a class="nav-link click-scroll sub-a" href="#">Submenú 2.2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="nav-link click-scroll sub-a" href="#">Submenú 3</a></li>
+                                </ul>
                             </li>
     
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_2">The Book</a>
+                                <a class="nav-link" href="seccion2.html">Durante la inundación</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_3">Author</a>
+                                <a class="nav-link active" href="seccion3.html">Despúes de la inundación</a>
                             </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_4">Reviews</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_5">Contact</a>
-                            </li>
+           
                         </ul>
 
-                        <div class="d-none d-lg-block">
-                            <a href="#" class="btn custom-btn custom-border-btn btn-naira btn-inverted">
-                                <i class="btn-icon bi-cloud-download"></i>
-                                <span>Download</span>
-                            </a>
-                        </div>
-                    </div>
-                    -->
+                      
+                    </nav>
+                    
                 </div>
             </nav>
              
@@ -93,15 +87,15 @@ https://templatemo.com/tm-588-ebook-landing
 
                         <div class="col-lg-6 col-12 mb-5 pb-5 pb-lg-0 mb-lg-0">
 
-                            <h6>Despúes de la inundación</h6>
+                            <h6 tabindex="0">Después la inundación</h6>
 
-                            <h1 class="text-white mb-4">Aprendiendo sobre las inundaciones</h1>
+                            <h1 tabindex="0" class="text-white mb-4">Aprendiendo sobre las inundaciones</h1>
                             
                             
                         </div>
 
                         <div class="hero-image-wrap col-lg-6 col-12 mt-0 mt-lg-0">
-                            <img width="250px" src="img/previo.jpg" class="hero-image img-fluid" alt="education online books">
+                            <img width="250px" src="img/durante.jpg" class="hero-image img-fluid" alt="education online books">
                         </div>
 
                     </div>
@@ -170,6 +164,7 @@ https://templatemo.com/tm-588-ebook-landing
 
                     </div>
                 </div>
+                
             </section>
 
 
@@ -183,6 +178,18 @@ https://templatemo.com/tm-588-ebook-landing
         <script src="js/aprendiendo/jquery.sticky.js"></script>
         <script src="js/aprendiendo/click-scroll.js"></script>
         <script src="js/aprendiendo/custom.js"></script>
-
+        <script>
+            // Obtener el elemento por su ID
+             const miElemento = document.getElementById("miElemento");
+             const elementoPadre = miElemento.parentElement;
+             // Agregar un event listener para el evento mouseover (hover)
+             miElemento.addEventListener("mouseover", () => {
+                 // Forzar el elemento a estar en estado de focus
+                 miElemento.focus();
+             });
+ 
+  
+ 
+         </script>
     </body>
 </html>
