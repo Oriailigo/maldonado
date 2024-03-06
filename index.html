@@ -303,6 +303,22 @@ https://templatemo.com/tm-588-ebook-landing
                     // Cambiar el atributo "aria-expanded" del botón del menú para indicar el estado del menú colapsable
                     const expanded = navbarToggler.getAttribute("aria-expanded") === "true" || false;
                     navbarToggler.setAttribute("aria-expanded", !expanded);
+
+                    // agregar el siguiente botonnnn
+
+                                    // Obtener el elemento del enlace "Conociendo el territorio"
+                                const territorioLink = document.querySelector(".masItem");
+                        
+                                // Agregar un event listener para el clic en el enlace "Conociendo el territorio"
+                                territorioLink.addEventListener("touchmove", function(event) {
+                                // Evitar que el evento se propague y cierre el menú colapsable
+                                event.stopPropagation();
+                                // Alternar la clase "show" en el menú colapsable para mantenerlo abierto
+                                navbarNav.classList.toggle("show");
+                                // Cambiar el atributo "aria-expanded" del botón del menú para indicar el estado del menú colapsable
+                                const expanded = navbarToggler.getAttribute("aria-expanded") === "true" || false;
+                                navbarToggler.setAttribute("aria-expanded", !expanded);
+                            });
                 });
             });
         </script>
