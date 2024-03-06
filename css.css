@@ -1,0 +1,79 @@
+/* Estilos básicos del menú */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 2rem; /* Espacio entre elementos del menú en PC */
+}
+
+a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Estilos del submenú */
+ul ul {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+}
+
+/* Mostrar los elementos dentro de la clase .sub-item cuando su contenedor li tiene foco */
+li:focus-within .sub-item {
+    display: flex;
+    background-color: red;
+    flex-direction: column;
+    position: absolute;
+    left: 100%; /* Posiciona el submenú a la derecha del contenedor li */
+    top: 0; /* Alinea la parte superior del submenú con la parte superior del contenedor li */
+    margin-top: 2.4rem; /* Ajuste adicional de la posición vertical */
+    z-index: 1; /* Asegura que el submenú esté por encima del resto del contenido */
+}
+
+/* Ocultar los elementos dentro de la clase .sub-item cuando su contenedor li no tiene foco */
+li:not(:focus-within) .sub-item {
+    display: none;
+}
+
+/* Ocultar los submenús cuando se enfoca un elemento del primer nivel del menú */
+li:focus-within > ul ul {
+    display: none;
+}
+
+/* Mostrar el submenú correspondiente cuando se hace hover o focus en el elemento li */
+li:hover > ul, li:focus-within > ul {
+    display: flex;
+    background-color: red;
+    flex-direction: column;
+}
+
+/* Consulta de medios para dispositivos móviles */
+@media screen and (max-width: 600px) {
+    li {
+        display: block; /* Cambiar a bloque para dispositivos móviles */
+        margin-right: 0; /* Eliminar margen entre elementos del menú en móviles */
+    }
+
+    ul ul {
+        display: none;
+        position: static; /* Cambiar a estático para dispositivos móviles */
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+    }
+        /* Anular los estilos específicos para la vista móvil */
+        li:focus-within .sub-item {
+             /* display: none; Ocultar el submenú en la vista móvil */
+            position: static; /* Restablecer la posición */
+            left: auto; /* Restablecer la posición */
+            top: auto; /* Restablecer la posición */
+            margin-top: 0; /* Restablecer el margen */
+            z-index: auto; /* Restablecer el z-index */
+        }
+}
