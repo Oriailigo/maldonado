@@ -48,12 +48,12 @@ https://templatemo.com/tm-588-ebook-landing
     
                     <nav class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-lg-auto me-lg-4">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Previo a la inundación</a>
+                            <li class="nav-item" id="IDbotonselec">
+                                <a class="nav-link" tabindex="0" >Previo a la inundación</a>
                                 <ul role="menu">
                                     <li><a class="nav-link click-scroll sub-a" href="index.html">Aprendiendo sobre la inundaciones</a></li>
                                     <li role="menuitem" aria-haspopup="true" >
-                                        <a class="nav-link sub-a masItem" href="#" id="miElemento">Conociendo el territorio</a>
+                                        <a class="nav-link sub-a masItem" href="#">Conociendo el territorio</a>
                                         <ul role="menu" class="sub-item">
                                             <li><a class="nav-link click-scroll sub-a"  href="#">Submenú 2.1</a></li>
                                             <li><a class="nav-link click-scroll sub-a" href="#">Submenú 2.2</a></li>
@@ -260,6 +260,57 @@ https://templatemo.com/tm-588-ebook-landing
         <script src="js/aprendiendo/click-scroll.js"></script>
         <script src="js/aprendiendo/custom.js"></script>
         <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                // Obtener el elemento del botón del menú
+                const navbarToggler = document.querySelector(".navbar-toggler");
+        
+                // Obtener el elemento del menú colapsable
+                const navbarNav = document.querySelector("#navbarNav");
+        
+                // Obtener el elemento del enlace "Conociendo el territorio"
+                const territorioLink = document.querySelector(".masItem");
+        
+                // Agregar un event listener para el clic en el enlace "Conociendo el territorio"
+                territorioLink.addEventListener("click", function(event) {
+                    // Evitar que el evento se propague y cierre el menú colapsable
+                    event.stopPropagation();
+                    // Alternar la clase "show" en el menú colapsable para mantenerlo abierto
+                    navbarNav.classList.toggle("show");
+                    // Cambiar el atributo "aria-expanded" del botón del menú para indicar el estado del menú colapsable
+                    const expanded = navbarToggler.getAttribute("aria-expanded") === "true" || false;
+                    navbarToggler.setAttribute("aria-expanded", !expanded);
+                });
+            });
+        </script>
+        
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                // Obtener el elemento del botón del menú
+                const navbarToggler = document.querySelector(".navbar-toggler");
+        
+                // Obtener el elemento del menú colapsable
+                const navbarNav = document.querySelector("#navbarNav");
+        
+                // Obtener el elemento del enlace "Previo a la inundación"
+                const previoLink = document.querySelector("#IDbotonselec > a");
+        
+                // Agregar un event listener para el clic en el enlace "Previo a la inundación"
+                previoLink.addEventListener("click", function(event) {
+                    // Evitar que el evento se propague y cierre el menú colapsable
+                    event.stopPropagation();
+                    // Alternar la clase "show" en el menú colapsable para mantenerlo abierto
+                    navbarNav.classList.toggle("show");
+                    // Cambiar el atributo "aria-expanded" del botón del menú para indicar el estado del menú colapsable
+                    const expanded = navbarToggler.getAttribute("aria-expanded") === "true" || false;
+                    navbarToggler.setAttribute("aria-expanded", !expanded);
+                });
+            });
+        </script>
+        
+        <script>
+
+
+
            // Obtener el elemento por su ID
             const miElemento = document.getElementById("miElemento");
             const elementoPadre = miElemento.parentElement;
@@ -269,7 +320,17 @@ https://templatemo.com/tm-588-ebook-landing
                 miElemento.focus();
             });
 
+
+            const IDbotonselec = document.getElementById("IDbotonselec");
+            IDbotonselec.addEventListener("click", () => {
+                // Forzar el elemento a estar en estado de focus
+                IDbotonselec.focus();
+                
+
+            });
+
  
+            
 
         </script>
 

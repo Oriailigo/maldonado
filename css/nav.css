@@ -45,6 +45,7 @@ li:focus-within .sub-item {
     z-index: 1; /* Asegura que el submenú esté por encima del resto del contenido */
 }
 
+
 /* Ocultar los elementos dentro de la clase .sub-item cuando su contenedor li no tiene foco */
 li:not(:focus-within) .sub-item {
     display: none;
@@ -64,6 +65,18 @@ li:hover > ul, li:focus-within > ul {
 
 /* Consulta de medios para dispositivos móviles */
 @media screen and (max-width: 600px) {
+
+
+    /* Estilo inicial para el elemento */
+    #miElemento {
+        display: none; /* El elemento está oculto inicialmente */
+    }
+
+    /* Estilo para el elemento cuando está activo (visible) */
+    #miElemento:focus-within {
+        display: block; /* Muestra el elemento cuando es activado por el ancla (:target) */
+    }
+
     .sub-item a{
         margin-left: 2rem!important;
     }
@@ -87,6 +100,8 @@ li:hover > ul, li:focus-within > ul {
             margin-top: 0; /* Restablecer el margen */
             z-index: auto; /* Restablecer el z-index */
         }
+
+
 }
 /* color del logo texto*/
 .navbar-brand:focus, .navbar-brand:hover{
@@ -98,6 +113,10 @@ li:hover > ul, li:focus-within > ul {
 }
 
 
+
+.masItem:hover{
+    display: block;
+}
 
 .masItem:hover{
     display: block;
