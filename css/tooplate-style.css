@@ -357,6 +357,7 @@ p:last-child {
   margin-bottom: 0;
 }
 
+
 @media (min-width: 900px) {
   .container {
     max-width: 900px;

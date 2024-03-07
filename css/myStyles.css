@@ -10,3 +10,20 @@
     /* height: 100vh; */
     width: 100%;
 }
+
+.bg-text{
+    background: var(--section-bg-color);
+    /* color: var(--p-color); */
+    border-radius: var(--border-radius-large);
+}
+
+.bg-container{
+    background-image: url(../img/index.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+body{
+    background-image: url(../img/index.jpg)!important;
+}

@@ -137,6 +137,7 @@ strong {
 .section-padding {
   padding-top: 100px;
   padding-bottom: 100px;
+  
 }
 
 ::selection {
@@ -558,7 +559,7 @@ strong {
   background-size: cover;
   background-position: center;
   position: relative;
-  padding-top: 50px;
+  
 }
 
 .hero-section::after {
@@ -571,11 +572,11 @@ strong {
   pointer-events: none;
   background-color: rgba(0, 0, 0, 0.45);
 }
-
-.hero-section .row {
+/* redimencionar el largo del hero */
+.hero-section .row { 
   position: relative;
   z-index: 22;
-  top: 100px;
+  padding:50px 15px;
 }
 
 .hero-image {
@@ -588,8 +589,8 @@ strong {
 
 @media screen and (min-width: 991px) {
   .hero-section {
-    height: calc(90vh - 88px);
-    padding-top: 10px;
+    /* height: calc(90vh - 88px);
+    padding-top: 10px; */
   }
 }
 
