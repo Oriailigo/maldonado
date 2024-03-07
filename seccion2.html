@@ -125,9 +125,10 @@ https://templatemo.com/tm-588-ebook-landing
     
                                     <div class="grid__item" id="team-link">
                                         <div class="product">
-                                            <div class="tm-nav-link">
+                                            <div class="tm-nav-link" onclick="toggleCollapse()">
                                                 <i class="fas fa-file fa-3x tm-nav-icon"></i>
                                                 <span class="tm-nav-text">
+                                                    
                                                      Previo a la inundación
                                                 </span>
                                                 <div class="product__bg"></div>            
@@ -135,7 +136,7 @@ https://templatemo.com/tm-588-ebook-landing
                                            
                                         </div>
                                     </div>
-                                   
+                                
     
                                     <div class="grid__item">
                                         <div class="product">
@@ -217,11 +218,20 @@ https://templatemo.com/tm-588-ebook-landing
                             </div>                       
                         </div>
 
+                        <div id="collapseExample" class="collapse">
+                            <div class="card card-body">
+                               <ul role="menu">
+                                    <li><a class="nav-link click-scroll sub-a" href="index.html">Aprendiendo sobre la inundaciones</a></li>
+                                    <li><a class="nav-link sub-a" href="#">Conociendo el territorio</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
 
-
+            
 
 
             <section class="py-lg-2"></section>
@@ -519,7 +529,16 @@ https://templatemo.com/tm-588-ebook-landing
                  miElemento.focus();
              });
  
-  
+             function toggleCollapse() {
+    var collapseElement = document.getElementById("collapseExample");
+    if (collapseElement.classList.contains("show")) {
+        collapseElement.classList.remove("show");
+    } else {
+        collapseElement.classList.add("show");
+    }
+}
+
+
  
          </script>
 
