@@ -24,8 +24,8 @@
     background-position: center;
     position: relative;
 }
-body{
-    background-image: url(../img/index.jpg)!important;
+.bg-delete{
+background-color: inherit;
 }
 
 
@@ -33,63 +33,4 @@ body{
 
 
 
-/* Estilos para el botón y el enlace */
-details {
-    summary {
-      list-style: none;
-    }
-  }
-  
-  .collapsel {
-    border: solid 1px var(--gray-lighter);
-    border-radius: 4px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 500px;
-    transition: background-color 0.25s;
-    will-change: background-color;
-  
-  
-  
-    &:not(:last-child) {
-      margin-bottom: var(--space-sm);
-    }
-  
-    &:hover {
-      background-color: var(--gray-lighter);
-  
-      .title:after {
-        content: "🙂";
-      }
-    }
-  
-    &[open] {
-      .title:after {
-        content: "😍";
-      }
-    }
-  }
-  
-  .title {
-    cursor: pointer;
-    font-weight: 600;
-    padding: var(--space-sm);
-    position: relative;
-  
-    &:after {
-      content: "😴";
-      position: absolute;
-      right: var(--space-sm);
-      transform: translatey(-50%);
-      top: 50%;
-    }
-  }
-  
-  .descriptionl {
-    border-top: var(--gray-light) solid 1px;
-    font-size: 14px;
-    line-height: 21px;
-    padding: var(--space-sm);
-  }
   
