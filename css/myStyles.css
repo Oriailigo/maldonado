@@ -28,9 +28,75 @@
 background-color: inherit;
 }
 
+.btn-con{
+border-radius: 2rem;
+}
 
-
-
-
-
+/* tabs */
+.container-tab {
+    background-color: #f0f8ff;
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.3);
+  }
   
+  .tab-buttons {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .tab-btn {
+    width: 100%;
+    border: none;
+    color: #020617;
+    background-color: #f0f8ff;
+    border-radius: 8px 18px 0px 0px;
+    font-weight: 500;
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .tab-btn:hover {
+    background-color: #a5b4fc;
+  }
+  .tab-btn.active {
+    background-color: #c7d2fe;
+  }
+  
+  .content-tab {
+    display: none;
+  }
+  .content-tab.show {
+    display: flex;
+    gap: 14px;
+    background-color: #c7d2fe;
+    border-radius: 0px 0px 8px 8px;
+    padding: 16px;
+  }
+  
+  .content-tab svg {
+    width: 50%;
+    height: 200px;
+  }
+  
+  .flex-tab{
+      display: flex;
+      align-items: center;
+  }
+
+
+
+  .content-tab-flex{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+
+  /* secciones */
+  .container-section{
+    max-width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }

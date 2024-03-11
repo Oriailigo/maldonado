@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>ebook landing page template</title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+        <link href="css/aprendiendo/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/aprendiendo/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/aprendiendo/templatemo-ebook-landing.css" rel="stylesheet">
+        <link href="css/nav.css" rel="stylesheet">
+
+        <!-- estilos del nav viejo: -->
+        <link rel="stylesheet" href="fontawesome/css/fontawesome-all.min.css">                <!-- https://fontawesome.com/  iconos -->
+        <link rel="stylesheet" href="css/tooplate-style.css"> <!--   colores para los iconos y demas estilos-->
+        <link rel="stylesheet" href="css/myStyles.css">  <!--  fonts -->
+
+<!--
+
+TemplateMo 588 ebook landing
+
+https://templatemo.com/tm-588-ebook-landing
+
+-->
+    </head>
+    
+    <body>
+
+        <main>
+
+          <!-- <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                   <a class="navbar-brand" href="index.html">
+                        <i class="navbar-brand-icon bi-book me-2"></i>
+                        <span>Maldonado</span>
+                    </a> 
+
+                    <button tabindex="0" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>  
+    
+                   <nav class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-auto me-lg-4">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" id="previo">Previo a la inundación</a>
+                                <ul role="menu">
+                                    <li><a class="nav-link click-scroll sub-a" href="index.html">Aprendiendo sobre la inundaciones</a></li>
+                                    <li role="menuitem" aria-haspopup="true">
+                                        <a class="nav-link sub-a masItem" href="#" id="miElemento">Conociendo el territorio</a>
+                                        <ul role="menu" class="sub-item">
+                                            <li><a class="nav-link click-scroll sub-a"  href="#">Submenú 2.1</a></li>
+                                            <li><a class="nav-link click-scroll sub-a" href="#">Submenú 2.2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="nav-link click-scroll sub-a" href="#">Submenú 3</a></li>
+                                </ul>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link active" href="seccion2.html">Durante la inundación</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="seccion3.html">Despúes de la inundación</a>
+                            </li>
+
+           
+                        </ul>
+
+                      
+                    </nav> 
+                    
+                </div>
+            </nav> -->
+             
+
+            <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+                <div class="container">
+                    <div class="row">
+                        <div>
+                            <h6 class="min-text">PICT Construyendo Resilencia. Modelización hidrólogica y Elaboración Socio-ambiental de Medidas NO estructurales. Caso: Cuenca del Arroyo Maldonado. Partido de La Plata. Argentina.</h6>
+                        </div>
+                        <div class="col-lg-6 col-12 mb-5 pb-0 pb-lg-0 mb-lg-0">
+
+                            
+
+                            <h1 tabindex="0" class="text-white mb-4">Cuenca del arroyo Maldonado</h1>
+                            <img src="img/underline.png" class="img-fluid mb-4">
+                            <h6 tabindex="0">Conocerlo para poder mitigar
+                                los riesgos de inundación.</h6>
+                            
+                            
+                        </div>
+
+                        <div class="hero-image-wrap col-lg-6 col-12 mt-0 mt-lg-0">
+                            <!-- <img width="250px" src="img/durante.jpg" class="hero-image img-fluid" alt="education online books"> -->
+                            <img class="my-4" width="100%" height="250px" src="img/portada.png" alt="">
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-12 col-xl-12">
+                            <div class="content">
+                                <div class="grid">
+                                    <div class="grid__item" id="home-link">
+                                        <div class="product">
+                                            <div class="tm-nav-link">
+                                                <i class="fa fa-folder-open fa-3x tm-nav-icon"></i>
+                                                <span class="tm-nav-text">Sobre el proyecto</span>
+                                                <div class="product__bg"></div>        
+                                            </div>                                    
+                                           
+                                        </div>
+                                    </div>
+    
+                                    <div class="grid__item" id="team-link">
+                                        <div class="product">
+                                            <div class="tm-nav-link" onclick="toggleCollapse()">
+                                                <i class="fas fa-file fa-3x tm-nav-icon"></i>
+                                                <span class="tm-nav-text">
+                                                    
+                                                     Previo a la inundación
+                                                </span>
+                                                <div class="product__bg"></div>            
+                                            </div>                                     
+                                           
+                                        </div>
+                                    </div>
+                                
+    
+                                    <div class="grid__item">
+                                        <div class="product">
+                                            <div class="tm-nav-link">
+                                                <i class="fa fa-arrow-right fa-3x tm-nav-icon"></i>
+                                                <a href="conociendo.html">
+                                                    <i class="fa fa-file">
+                                                    </i>
+                                                </a>
+                                                <span class="tm-nav-text">Durante la inundación</span>
+                                                <div class="product__bg"></div>             
+                                            </div>                                         
+                                              
+                                        </div>
+                                    </div>
+    
+                                    <div class="grid__item">
+                                        <div class="product">
+                                            <div class="tm-nav-link">
+                                                <i class="fa fa-building fa-3x tm-nav-icon"></i>
+                                                <span class="tm-nav-text">Despúes de la inundación</span>
+                                                <div class="product__bg"></div>             
+                                            </div>                                     
+                                            <div class="product__description">
+                                                <div class="p-sm-4 p-2">
+                                                    <div class="row mb-3">
+                                                        <div class="col-12">
+                                                            <h2 class="tm-page-title">Despúes de la inundación</h2>        
+                                                        </div>
+                                                    </div>
+                                                    <div class="row tm-reverse-sm">
+                                                        <div class="">
+                                                            <p class="mb-4">Antes de que las aguas se desborden, un intrigante ballet natural se desarrolla: la atmósfera se carga de tensión, las nubes acumulan su fuerza y los ríos ansían desbordarse. Es un preludio silencioso pero poderoso. En este momento crítico, te invitamos a explorar cómo entender las sutiles señales previas a una inundación puede marcar la diferencia entre la preparación y la sorpresa. </p>
+                                                            <p class="mb-5">Sumérgete en nuestro mundo informativo y preventivo, donde desvelamos los secretos del terreno antes de que las aguas tomen el escenario, brindándote las herramientas esenciales para navegar los desafíos antes de que llegue la tormenta. ¡Prepárate para un viaje de conocimiento que podría salvar vidas!</p>
+                                                            
+                                                            <p class="mb-4">.</p>
+                                                            <div class="">
+                                                                <div class="">
+                                                                  <div class="fadeInUp">
+                                                                    <div class="grid">
+                                                                      
+                                                                      <div class="col-md-6 col-sm-6 wow bounceInUp">
+                                                                        <div class="single-item">
+                                                                            <i class="fa fa-heart"></i>
+                                                                          <h2>Puestos de ayuda y donaciones</h2>
+                                                                          <p>Aprende sobre la importancia de la preparación y las medidas preventivas para enfrentar los desafíos antes de que las aguas crezcan.</p>
+                                                                        </div>
+                                                                      </div>
+                                                                      <div class="col-md-6 col-sm-6 wow bounceInUp">
+                                                                        <div class="single-item">
+                                                                            <i class="fa fa-shield-alt"></i>
+                                                                            <h2>Recomendaciones y cuidados</h2>
+                                                                            <p>Descubre la importancia de la preparación y las medidas preventivas, y encuentra un mapa interactivo que detalla el terreno actual.</p>
+                                                                        </div>
+                                                                      </div>
+                                                                      <div class="col-md-6 col-sm-6 wow bounceInUp">
+                                                                        <div class="single-item">
+                                                                            <a href="despues.html">
+                                                                                <i class="fa fa-search"></i>
+                                                                            </a>
+    
+                                                                            <h2>Análisis de daños</h2>
+                                                                            <p>Descubre la importancia de la preparación y las medidas preventivas, y encuentra un mapa interactivo que detalla el terreno actual.</p>
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+         
+                                                              </div>
+                                                            <a href="#" class="btn tm-btn-gray">Read More</a>        
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>                       
+                        </div>
+
+                        <div id="collapseExample" class="collapse">
+                            <div class="card card-body bg-delete">
+                                <button type="button" class="btn btn-secondary btn-sm mb-2 btn-con">Conociendo el territori</button> 
+                                <button type="button" class="btn btn-secondary btn-sm btn-con">Aprendiendo sobre la inundaciones</button>      
+                                 
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            
+
+
+            <section class="py-lg-2"></section>
+
+
+            <section class="book-section section-padding bg-container" id="section_2">
+            <section>
+                <div class="container">
+                    <div class="row">
+    
+                        <div class="col-lg-12 col-12 text-center">
+                            <h6 tabindex="0">Explora el Mundo de las Inundaciones: Durante y Aprendizaje</h6>
+    
+                            <h2 tabindex="0" class="mb-5">Informate</h2>
+                        </div>
+    
+                        <div class="col-lg-4 col-12">
+                            <nav id="navbar-example3" class="h-100 flex-column align-items-stretch">
+                                <nav class="nav nav-pills flex-column">
+                                    <a class="nav-link smoothscroll" href="#item-1">Como actuar: Acciones Cruciales en Inundaciones</a>
+    
+                                    <a class="nav-link smoothscroll" href="#item-2">Capitulo 1: <strong>Nivel del Agua en Inundaciones</strong></a>
+    
+                                    <a class="nav-link smoothscroll" href="#item-3">Capitulo 2: <strong>Work less, do more</strong></a>
+    
+                                    <a class="nav-link smoothscroll" href="#item-4">Capitulo 3: <strong>Inundaciones en el Hogar</strong></a>
+    
+                                    <a class="nav-link smoothscroll" href="#item-5">Capitulo 4: <strong>Eleva la Protección</strong></a>
+                                </nav>
+                            </nav>
+                        </div>
+    
+                        <div class="col-lg-8 col-12  bg-text">
+                            <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+                                <div class="scrollspy-example-item" id="item-1">
+                                    <h5>Acciones Cruciales en Inundaciones: Cortando Electricidad y Gas para tu Seguridad</h5>
+    
+                                    <p>
+                                        En momentos de inundación, la seguridad es primordial. Anticiparse a las emergencias es clave para proteger a tu familia y hogar. A continuación, te presentamos información crucial sobre cómo actuar preventivamente cortando la electricidad y el gas. Presta atención a estas partes importantes:
+                                    </p>
+                                    <p> <strong> 1. Electricidad: </strong> 
+                                        <br>
+    
+                                        Cuando las inundaciones amenazan, cortar la electricidad es esencial para evitar riesgos graves. Sigue estos pasos:
+                                        
+                                        Desconecta el suministro principal: Ubica el interruptor principal y apágalo. Este paso ayuda a prevenir cortocircuitos y posibles electrocuciones.
+                                        
+                                        Desenchufa los electrodomésticos: Desconecta todos los electrodomésticos importantes. Esto evita daños por agua y protege contra posibles fugas eléctricas.
+                                        
+                                        Mantén linternas a mano: Antes de que la oscuridad caiga, asegúrate de tener linternas y baterías a disposición. La iluminación con velas puede ser peligrosa en entornos inundados.
+                                    </p>    
+                                    <p>   
+                                        <strong>2. Gas: </strong>
+                                        <br>
+                                        
+                                        El gas representa un riesgo significativo durante las inundaciones. Actúa de manera preventiva con estos pasos:
+                                        
+                                        Cierra la válvula principal de gas: Ubica la válvula principal de gas y gírala en sentido contrario a las agujas del reloj para cerrarla. Esto evita posibles fugas y peligros asociados.
+                                        
+                                        Evita encender fósforos o encendedores: Durante las inundaciones, abstente de encender cualquier cosa que pueda provocar una chispa. La acumulación de gas en espacios cerrados es altamente inflamable.
+                                        
+                                        Ventila el área: Después de cerrar la válvula de gas, ventila la casa abriendo puertas y ventanas. Esto ayuda a dispersar cualquier gas residual y garantiza un ambiente seguro.
+                                        
+                                        Recuerda, la prevención es la mejor defensa. Estos pasos simples, pero vitales, pueden marcar la diferencia en la seguridad de tu hogar durante una inundación. Mantente informado, mantén la calma y toma medidas con anticipación para proteger a tus seres queridos y tu propiedad.              </p>
+                                    </p> 
+                                </div>
+    
+                                <div class="scrollspy-example-item" id="item-2">
+                                    <h5>Nivel del Agua en Inundaciones: Cómo Actuar si Supera la Rodilla</h5>
+    
+                                    <p>En situaciones de inundación, es crucial tomar medidas preventivas para garantizar la seguridad de tu hogar y seres queridos. Aquí te presentamos una guía sobre cómo actuar si el nivel del agua supera la rodilla. Presta atención a estas instrucciones clave:
+    
+                                    </p>
+                                    <p>
+                                        <strong>1. Evalúa la Altura del Agua:
+                                        </strong>
+                                        <br>
+                                        <strong>
+                                            Monitorea constantemente el nivel del agua:
+                                        </strong>
+                                         Mantén un ojo vigilante en el nivel del agua tanto dentro como fuera de tu hogar. Usa herramientas como palos o marcas en las paredes para medir su altura.
+     
+                                    </p>
+                                        
+    
+                                    <div class="row">
+                                        <div class="col-lg-6 col-12 mb-3">
+                                            <img src="images/portrait-mature-smiling-authoress-sitting-desk.jpg" class="scrollspy-example-item-image img-fluid" alt="">
+                                        </div>
+    
+                                        <div class="col-lg-6 col-12 mb-3">
+                                            <img src="images/businessman-sitting-by-table-cafe.jpg" class="scrollspy-example-item-image img-fluid" alt="">
+                                        </div>
+                                    </div>
+    
+                                    <p>
+                                        <strong>
+                                            2. Acciones si el Agua Supera la Rodilla:
+                                        </strong>
+                                            <br>
+    
+                                        Abre la puerta de la calle solo si es seguro: Si el agua alcanza la altura de la rodilla y no hay corriente fuerte, considera abrir la puerta de la calle. Hazlo con precaución y solo si no hay peligro inminente.
+    
+                                        Utiliza equipo de protección: Antes de aventurarte en el agua, ponte botas altas y usa ropa impermeable. Esto reduce el riesgo de lesiones y protege tu salud.
+    
+                                        Mantén una salida de emergencia: Asegúrate de que haya una ruta de escape clara y segura antes de abrir la puerta. Planifica el camino más alto y evita áreas con corrientes fuertes.
+    
+    
+                                    </p>
+    
+                                    <p>
+                                        <strong>
+                                            3. Comunicación y Evacuación:
+                                        </strong>
+                                            <br>
+                                            <strong>
+                                            Mantén comunicación con servicios de emergencia: <strong>
+                                                Si las condiciones empeoran, comunícate con los servicios de emergencia y sigue sus instrucciones. La seguridad es la prioridad.
+                                            <br>
+                                                <strong>Considera la evacuación:</strong>
+                                             Si el agua sigue subiendo, considera evacuar tu hogar. Ten un plan de evacuación y asegúrate de que todos los miembros de la familia estén informados sobre cómo proceder.
+                                            <br>
+                                            Recuerda, la seguridad es primordial en situaciones de inundación. Actuar con anticipación y precaución puede marcar la diferencia. Sigue estas pautas para tomar decisiones informadas y proteger a tu familia y propiedad.
+                                    </p>
+                                </div>
+    
+                                <div class="scrollspy-example-item" id="item-3">
+                                    <h5>Inundaciones en el Hogar: Protegiendo la Heladera para Evitar Flotación</h5>
+    
+                                    <p>
+                                        En momentos de inundación, proteger los electrodomésticos es fundamental para evitar daños y garantizar la seguridad en el hogar. Aquí te proporcionamos instrucciones sobre cómo actuar para prevenir que la heladera flote. Presta atención a estos pasos esenciales:
+                                    </p>
+                                    <p>
+                                        <strong>
+                                            1. Monitoreo Continuo:
+                                        </strong>
+                                        <br>
+                                        <strong>
+                                            Mantén un ojo en el nivel del agua:
+                                        </strong>
+                                             Vigila constantemente el nivel del agua en tu hogar. Utiliza marcas o referencias para evaluar la altura y anticipar posibles problemas.
+                                    </p>
+                                    <p>
+                                    <strong>
+                                        2. Acciones para Proteger la Heladera:
+                                    </strong>
+                                    <br>
+                                    <strong>
+                                        Abre la puerta de la heladera:
+                                    </strong>
+                                    Si el agua alcanza un nivel crítico y hay riesgo de inundación, abre la puerta de la heladera. Esto permite que el agua entre y equilibra la presión, evitando que la heladera flote.
+    
+    
+                                    <br>
+                                    <strong>
+                                        Retira alimentos perecederos: 
+                                    </strong>
+                                    Antes de abrir la puerta, retira cualquier alimento perecedero de la heladera. Esto minimiza la pérdida de alimentos y facilita la tarea de limpieza después de la inundación.
+    
+                                    <br>
+                                    <strong>
+                                        Mantén la puerta cerrada cuando no esté en uso: 
+                                    </strong>
+                                    Una vez que hayas tomado medidas para evitar que la heladera flote, mantén la puerta cerrada siempre que no estés extrayendo alimentos. Esto ayuda a conservar la temperatura interior y a mantener la eficiencia del electrodoméstico.
+    
+                                    </p>       
+                                                                        
+                                    <p>
+                                        <strong>
+                                            3. Seguridad y Evacuación:
+                                        </strong>
+    
+                                        Una vez que hayas tomado medidas para evitar que la heladera flote, mantén la puerta cerrada siempre que no estés extrayendo alimentos. Esto ayuda a conservar la temperatura interior y a mantener la eficiencia del electrodoméstico.
+                                        <br>
+                                        <strong>
+                                            Prioriza la seguridad personal: 
+                                        </strong>
+                                        Si las condiciones empeoran y hay riesgo para tu seguridad, abandona el área de inmediato. La seguridad personal es siempre la prioridad.
+    
+                                        <br>
+                                        <strong>
+                                            Desconexión de la energía: 
+                                        </strong>
+                                        Si es seguro hacerlo, desconecta la heladera de la corriente eléctrica para evitar posibles riesgos eléctricos.
+    
+                                        <br>
+                                        
+                                    </p>
+                                        
+    
+    
+    
+    
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6 col-12">
+                                            <img src="images/tablet-screen-contents.jpg" class="img-fluid" alt="">
+                                        </div>
+    
+                                        <div class="col-lg-6 col-12">
+                                            <p>Conclusión</p>
+    
+                                            <p><strong>Recuerda, la anticipación y la acción proactiva son esenciales durante las inundaciones. Siguiendo estos pasos, puedes proteger tu heladera y minimizar los daños en tu hogar. ¡Actúa con precaución y prioriza la seguridad!
+                                            </strong></p>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="scrollspy-example-item" id="item-4">
+                                    <h5>Eleva la Protección: Traslado de Elementos Vulnerables a Plantas Superiores en Inundaciones</h5>
+    
+                                    <p>
+                                        Anticiparse a las inundaciones es crucial para la protección de tus posesiones más valiosas. Aquí te presentamos un plan de acción para trasladar elementos vulnerables a las plantas superiores de tu hogar. Presta atención a estas instrucciones fundamentales:    
+                                    </p>
+    
+                                    <p><strong>Monitoreo Continuo:</strong> Mantén un ojo en el nivel del agua: Vigila constantemente el nivel del agua en tu hogar. Utiliza marcas o referencias para evaluar la altura y anticipar posibles problemas.</p>
+    
+                                    <p><strong>Acciones para Proteger la Heladera:</strong></p>
+                                    <ul>
+                                      <li>Abre la puerta de la heladera: Si el agua alcanza un nivel crítico y hay riesgo de inundación, abre la puerta de la heladera. Esto permite que el agua entre y equilibra la presión, evitando que la heladera flote.</li>
+                                      <li>Retira alimentos perecederos: Antes de abrir la puerta, retira cualquier alimento perecedero de la heladera. Esto minimiza la pérdida de alimentos y facilita la tarea de limpieza después de la inundación.</li>
+                                      <li>Mantén la puerta cerrada cuando no esté en uso: Una vez que hayas tomado medidas para evitar que la heladera flote, mantén la puerta cerrada siempre que no estés extrayendo alimentos. Esto ayuda a conservar la temperatura interior y a mantener la eficiencia del electrodoméstico.</li>
+                                    </ul>
+                                  
+                                    <p><strong>Seguridad y Evacuación:</strong></p>
+                                    <ul>
+                                      <li>Prioriza la seguridad personal: Si las condiciones empeoran y hay riesgo para tu seguridad, abandona el área de inmediato. La seguridad personal es siempre la prioridad.</li>
+                                      <li>Desconexión de la energía: Si es seguro hacerlo, desconecta la heladera de la corriente eléctrica para evitar posibles riesgos eléctricos.</li>
+                                    </ul>
+                                  
+                                    <p>Recuerda, la anticipación y la acción proactiva son esenciales durante las inundaciones. Siguiendo estos pasos, puedes proteger tu heladera y minimizar los daños en tu hogar. ¡Actúa con precaución y prioriza la seguridad!</p>
+                                  
+                                    <img src="images/portrait-mature-smiling-authoress-sitting-desk.jpg" class="scrollspy-example-item-image img-fluid mb-3" alt="">
+    
+                                    <p>You may want to contact us for more information about this template.</p>
+                                </div>
+    
+                                <div class="scrollspy-example-item" id="item-5">
+                                    <h1>Acciones Cruciales en Inundaciones</h1>
+    
+                                    <p>En momentos de inundación, proteger los electrodomésticos es fundamental para evitar daños y garantizar la seguridad en el hogar. Aquí te proporcionamos instrucciones sobre cómo actuar para prevenir que la heladera flote. Presta atención a estos pasos esenciales:</p>
+    
+                                    <p><strong>Monitoreo Continuo:</strong> Mantén un ojo en el nivel del agua: Vigila constantemente el nivel del agua en tu hogar. Utiliza marcas o referencias para evaluar la altura y anticipar posibles problemas.</p>
+    
+                                    <p><strong>Acciones para Proteger la Heladera:</strong></p>
+                                    <ul>
+                                        <li>Abre la puerta de la heladera: Si el agua alcanza un nivel crítico y hay riesgo de inundación, abre la puerta de la heladera. Esto permite que el agua entre y equilibra la presión, evitando que la heladera flote.</li>
+                                        <li>Retira alimentos perecederos: Antes de abrir la puerta, retira cualquier alimento perecedero de la heladera. Esto minimiza la pérdida de alimentos y facilita la tarea de limpieza después de la inundación.</li>
+                                        <li>Mantén la puerta cerrada cuando no esté en uso: Una vez que hayas tomado medidas para evitar que la heladera flote, mantén la puerta cerrada siempre que no estés extrayendo alimentos. Esto ayuda a conservar la temperatura interior y a mantener la eficiencia del electrodoméstico.</li>
+                                    </ul>
+    
+                                    <p><strong>Seguridad y Evacuación:</strong></p>
+                                    <ul>
+                                        <li>Prioriza la seguridad personal: Si las condiciones empeoran y hay riesgo para tu seguridad, abandona el área de inmediato. La seguridad personal es siempre la prioridad.</li>
+                                        <li>Desconexión de la energía: Si es seguro hacerlo, desconecta la heladera de la corriente eléctrica para evitar posibles riesgos eléctricos.</li>
+                                    </ul>
+    
+                                    <p><strong>Disponer un Kit de Emergencia:</strong></p>
+                                    <ul>
+                                        <li>Selecciona un lugar seco y accesible: Elige un lugar en tu hogar que esté fuera de áreas propensas a inundaciones y que sea fácilmente accesible para todos los miembros de la familia.</li>
+                                        <li>Reúne suministros esenciales: Incluye alimentos no perecederos, agua, medicamentos, linterna, baterías, kit de primeros auxilios y documentos importantes en tu kit de emergencia.</li>
+                                        <li>Mantén el kit actualizado: Revise y actualiza regularmente el contenido del kit para asegurarte de que todos los elementos estén en buen estado y dentro de su fecha de caducidad.</li>
+                                    </ul>
+    
+                                    <p>Recuerda, la anticipación y la acción proactiva son esenciales durante las inundaciones. Siguiendo estos pasos, puedes proteger tu hogar y mantener a tu familia segura. ¡Actúa con precaución y prioriza la seguridad!</p>
+                                    <blockquote class="blockquote">Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omeg kohm tokito</blockquote>
+    
+                                    <p>You may browse TemplateMo website for more CSS templates. Thank you for visiting our website.</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                
+            </section>
+
+
+
+
+        </main>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/aprendiendo/jquery.min.js"></script>
+        <script src="js/aprendiendo/bootstrap.bundle.min.js"></script>
+        <script src="js/aprendiendo/jquery.sticky.js"></script>
+        <script src="js/aprendiendo/click-scroll.js"></script>
+        <script src="js/aprendiendo/custom.js"></script>
+        <script src="js/tab.js"></script>
+        <script>
+            // Obtener el elemento por su ID
+             const miElemento = document.getElementById("miElemento");
+             const elementoPadre = miElemento.parentElement;
+             // Agregar un event listener para el evento mouseover (hover)
+             miElemento.addEventListener("mouseover", () => {
+                 // Forzar el elemento a estar en estado de focus
+                 miElemento.focus();
+             });
+ 
+             function toggleCollapse() {
+    var collapseElement = document.getElementById("collapseExample");
+    if (collapseElement.classList.contains("show")) {
+        collapseElement.classList.remove("show");
+    } else {
+        collapseElement.classList.add("show");
+    }
+}
+
+
+ 
+         </script>
+
+    </body>
+</html>
