@@ -1,5 +1,5 @@
 .min-text{
-    font-size: 0.5rem;
+    font-size: 1rem;
 }
 .portada{
     background-image: url("../img/portada.png");
@@ -84,6 +84,9 @@ border-radius: 2rem;
   .content-description{
     color:#f2f3f7;
 }
+.content-description li{
+  color:#f2f3f7;
+}
   .content-tab svg {
     width: 50%;
     height: 200px;
@@ -112,4 +115,35 @@ border-radius: 2rem;
     padding-right: 2rem;
   }
 /* btn inundacion */
+
+.button-seccion {
+  border: 1px solid white; /* Modificado para agregar bordes de 1px */
+  color: #020617;
+  background-color: #f0f8ff93;
+  border-radius: 8px 18px 0px 0px;
+  font-weight: 500;
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 15px; /* Redondeado */
+  font-size: medium; /* Tamaño mediano */
+}
+
+.button-seccion:hover {
+  background-color: #a5b4fc87;
+}
+.content-buttons{
+  display: flex;
+  gap:1rem;
+}
+.img-ancho{
+  width: 80rem;
+}
+
+footer{
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #03060B;
+}
 

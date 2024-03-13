@@ -553,45 +553,10 @@ strong {
 /*---------------------------------------
   HERO        
 -----------------------------------------*/
+
 .hero-section {
-  background-image: url('../../img/index.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  
-}
 
-.hero-section::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  pointer-events: none;
-  background-color: rgba(0, 0, 0, 0.45);
-}
-/* redimencionar el largo del hero */
-.hero-section .row { 
-  position: relative;
-  z-index: 22;
-  padding:50px 15px;
-}
-
-.hero-image {
-  position: relative;
-  z-index: 2;
-  bottom: 100px;
-  display: block;
-  margin: auto;
-}
-
-@media screen and (min-width: 991px) {
-  .hero-section {
-    /* height: calc(90vh - 88px);
-    padding-top: 10px; */
-  }
+  padding-top: 4rem;
 }
 
 
