@@ -34,34 +34,38 @@ border-radius: 2rem;
 
 /* tabs */
 .container-tab {
-    background-color: #f0f8ff;
+
     width: 100%;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.3);
   }
   
   .tab-buttons {
     display: flex;
-    gap: 8px;
+    gap: 1rem;
   }
   
   .tab-btn {
     width: 100%;
-    border: none;
+    border: 1px solid white; /* Modificado para agregar bordes de 1rem */
     color: #020617;
-    background-color: #f0f8ff;
+    background-color: #f0f8ff00;
     border-radius: 8px 18px 0px 0px;
     font-weight: 500;
     padding: 12px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
+  .p-color-btn{
+    color: #f2f3f7;
+  }
   .tab-btn:hover {
-    background-color: #a5b4fc;
+    background-color: #a5b4fc87;
   }
   .tab-btn.active {
-    background-color: #c7d2fe;
+    background-color: #c7d2fe4d;
+    border-bottom-style: none; /* Establecer el estilo del borde inferior como "none" */
   }
   
   .content-tab {
@@ -70,16 +74,23 @@ border-radius: 2rem;
   .content-tab.show {
     display: flex;
     gap: 14px;
-    background-color: #c7d2fe;
+    background-color: #c7d2fe4d;
     border-radius: 0px 0px 8px 8px;
+    border: 1px solid white; /* Modificado para agregar bordes de 1rem */
+    border-top-style: none; /* Establecer el estilo del borde inferior como "none" */
+
     padding: 16px;
   }
-  
+  .content-description{
+    color:#f2f3f7;
+}
   .content-tab svg {
     width: 50%;
     height: 200px;
   }
-  
+  .tm-nav-icon{
+    color:#f2f3f7;
+}
   .flex-tab{
       display: flex;
       align-items: center;
@@ -100,3 +111,5 @@ border-radius: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
   }
+/* btn inundacion */
+
