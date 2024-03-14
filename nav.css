@@ -63,4 +63,7 @@
   button span{
     font-size: 1rem;
   }
-  
+
+  .mg-top{
+  margin-top: 80px; /* Ajusta según sea necesario */
+}
