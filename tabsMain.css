@@ -163,6 +163,13 @@ footer{
 /* celular */
 
 @media (max-width: 768px) {
+  .content-main-des{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
   .tab {
       width: 90%; /* Cambiar el ancho al 100% en dispositivos móviles */
       padding-right: 1rem;
