@@ -6,9 +6,13 @@
     left: 0;
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
     padding: 10px 20px;
+  }
+  .bg-b{
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
   }
   
   .navbar-left {
@@ -66,4 +70,13 @@
 
   .mg-top{
   margin-top: 80px; /* Ajusta según sea necesario */
+}
+.margin-p{
+  margin-top:0rem ;
+  margin-bottom:0rem ;
+  text-align: left;
+}
+
+.margen-b{
+  margin-bottom:1rem ;
 }
