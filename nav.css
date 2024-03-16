@@ -1,13 +1,24 @@
 .navbar {
     background-color: black;
     color: white;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
+    padding-top: 10px;
+    padding-bottom: 20px;
+    justify-content: space-around;
   }
+
+  .menu{
+    margin-top: 1rem!important;
+    z-index: 99999!important;;
+    position:unset!important;;
+  }
+
+  
   .bg-b{
     background-color: black;
     color: white;

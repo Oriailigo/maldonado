@@ -155,6 +155,12 @@ footer{
 /* celular */
 
 @media (max-width: 768px) {
+.acomodar-items{
+  top: 5rem!important;
+}
+.left-sub-items{
+  margin-left: -3rem;
+}
   .tab-buttons{
     display: flex;
     flex-direction: column;

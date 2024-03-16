@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="tabsMain.css">
     <link rel="stylesheet" href="fontawesome/css/fontawesome-all.min.css">                <!-- https://fontawesome.com/  iconos -->
-        
+    <link rel="stylesheet" href="css/myStyles.css"> 
+    <link rel="stylesheet" href="menuHamburguesa.css"> 
+
     <title>Document</title>
 </head>
 <body>
@@ -18,6 +20,45 @@
           </button>
 
         </div> -->
+                                                  <!-- comienzo del menu hamburger -->
+                                                  <div class="menu">
+                                                    <button class="hamburger" aria-label="Menú">
+                                                    <span class="line1"></span>
+                                                    <span class="line2"></span>
+                                                    <span class="line3"></span>
+                                                    </button>
+                                                    <ul class="menu-list acomodar-items">
+                                                        <li>
+                                                            <button tabindex="0" class="btn-color" onclick="location.href='index.html';">Acerca del proyecto</button>
+                                                            
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <button tabindex="0" class="btn-color">Previo a la inundación</button>
+                                                            <ul class="sub-menu ">
+                                                            <li class="left-sub-items"><button class="btn-color subitem-color" tabindex="0" onclick="location.href='aprendiendo.html';">Aprendiendo sobre las inundaciones</button></li>
+                                                            <li class="left-sub-items"><button class="btn-color subitem-color" tabindex="0" onclick="location.href='#';">Por qué nos inundamos</button></li>
+                                                            <li class="left-sub-items"><button class="btn-color subitem-color" tabindex="0" onclick="location.href='#';">Conociendo tu territorio</button></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <button tabindex="0" class="btn-color">Durante la inundación</button>
+                                                            <ul class="sub-menu">
+                                                            <li class="left-sub-items"><button class="btn-color subitem-color" tabindex="0" onclick="location.href='#';">Adónde acudir</button></li>
+                                                            <li class="left-sub-items"><button class="btn-color subitem-color" tabindex="0" onclick="location.href='#';">Recomendaciones de cómo actuar</button></li>
+                                                            <li class="left-sub-items"><button class="btn-color subitem-color" tabindex="0" onclick="location.href='#';">Teléfonos y centros de encuentro</button></li>
+                                                            <li class="left-sub-items"><button class="btn-color subitem-color" tabindex="0" onclick="location.href='#';">Protocolos de actuación</button></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <button tabindex="0" class="btn-color">Después de la inundación</button>
+                                                            <ul class="sub-menu">
+                                                            <li class="left-sub-items"><button class="btn-color subitem-color" tabindex="0" onclick="location.href='#';">Higiene</button></li>
+                                                            <li class="left-sub-items"><button class="btn-color subitem-color" tabindex="0" onclick="location.href='#';">Daños estructurales</button></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- fin del menu hamburger -->
         <button class="bg-b navbar-left" onclick="window.location.href='index.html'">
           <div class="col margen-b">
             <p tabindex="0" class="text-white margin-p">Cuenca del arroyo <br> Maldonado</p>
@@ -140,6 +181,63 @@
         });
 
     </script> 
+        <!-- menu hamburguer -->
+        <script>
+
+
+
+          document.addEventListener("DOMContentLoaded", function() {
+              var hamburger = document.querySelector(".hamburger");
+              var menuList = document.querySelector(".menu-list");
+              var menuItems = document.querySelectorAll(".menu-item");
+              var subMenus = document.querySelectorAll(".sub-menu");
+              var tab = document.querySelector(".tab");
+              
+              hamburger.addEventListener("click", function() {
+                this.classList.toggle("open");
+                menuList.classList.toggle("open");
+                if (menuList.classList.contains("open")) {
+                  tab.style.zIndex = "-1"; // Cuando se abre el menú, establecer z-index en -1
+                } else {
+                    tab.style.zIndex = "1"; // Cuando se cierra el menú, establecer z-index en 1
+                }
+            
+              });
+              
+              // Mostrar y ocultar submenús cuando se posiciona sobre los botones
+              menuItems.forEach(function(item, index) {
+    
+    
+                var isOpen = false; // Variable de control para verificar si el submenú está abierto
+        
+                item.addEventListener("click", function() {
+                  // Cerrar todos los submenús excepto el actual
+                   // Ocultar todos los submenús
+                   subMenus.forEach(function(subMenu) {
+                            subMenu.classList.remove("open");
+                        });
+                        
+                        // Alternar el estado del submenú correspondiente
+                        subMenus[index].classList.toggle("open");
+                    });
+                    
+                    // Evitar que se cierre el submenú cuando se hace clic dentro de él
+                    subMenus[index].addEventListener("click", function(event) {
+                        event.stopPropagation();
+                    });
+              
+    
+                
+                item.addEventListener("keydown", function(event) {
+                  if (event.key === "Enter" || event.key === " ") {
+                    subMenus[index].style.display = "block";
+                  }
+                });
+              
+              });
+          });
+          
+        </script>
 
 </body>
 </html>

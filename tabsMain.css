@@ -23,6 +23,10 @@
     height: 100%;
   }
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+.z-index-negative {
+  z-index: -1;
+}
+
  .tab {
 	
 	 position: relative;

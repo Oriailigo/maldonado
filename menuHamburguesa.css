@@ -85,6 +85,7 @@
   .menu-item:hover .sub-menu,
   .menu-item:focus .sub-menu {
     display: block;
+    background-color: #5a6ab9!important;
   }
   
   /* #tm-wrap {
@@ -134,7 +135,7 @@
 }
 .subitem-color{
     background: #5a6ab9af!important;
-    background-color: #3f47578b;
+    background-color: #3f47578b!important;
     
       padding-left: 4rem!important; /* Agregar 2 rem de espacio a la izquierda del texto */
   
