@@ -135,6 +135,10 @@
 .subitem-color{
     background: #5a6ab9af!important;
     background-color: #3f47578b;
+    
+      padding-left: 4rem!important; /* Agregar 2 rem de espacio a la izquierda del texto */
+  
+  
 }
 
 /* Estilos para ocultar el menú en dispositivos móviles */
@@ -142,4 +146,5 @@
   .menu {
       display: none;
   }
+ 
 }

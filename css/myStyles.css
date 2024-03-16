@@ -146,6 +146,11 @@ footer{
   padding-bottom: 2rem;
   background-color: #03060B;
 }
+/* pc */
+
+.content-tab-acercade{
+  display: none!important; 
+}
 
 /* celular */
 
@@ -192,6 +197,12 @@ footer{
   .mb-5 {
    margin-bottom: 0rem !important; 
 }
+.container-tab{
+  display: none;
+}
+.content-tab-acercade{
+  display: block!important; 
+}
 /*
   .tab {
       width: 90%; 
@@ -217,3 +228,4 @@ footer{
     background-color: #a5b4fc87;
   }*/
 }
+
