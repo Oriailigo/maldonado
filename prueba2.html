@@ -82,6 +82,15 @@
               });
             });
           });
+          menuItems.forEach(function(item, index) {
+            item.addEventListener("click", function() {
+                if (subMenus[index].style.display === "block") {
+                    subMenus[index].style.display = "none";
+                } else {
+                    subMenus[index].style.display = "block";
+                }
+            });
+        });
 
            // Mostrar y ocultar submenús cuando se toca sobre los botones
            menuItems.forEach(function(item, index) {

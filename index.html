@@ -277,6 +277,9 @@ https://www.tooplate.com/view/2097-pop
     
     <!-- menu hamburguer -->
     <script>
+
+
+
       document.addEventListener("DOMContentLoaded", function() {
           var hamburger = document.querySelector(".hamburger");
           var menuList = document.querySelector(".menu-list");
@@ -290,6 +293,29 @@ https://www.tooplate.com/view/2097-pop
           
           // Mostrar y ocultar submenús cuando se posiciona sobre los botones
           menuItems.forEach(function(item, index) {
+
+
+            var isOpen = false; // Variable de control para verificar si el submenú está abierto
+    
+            item.addEventListener("click", function() {
+              // Cerrar todos los submenús excepto el actual
+                subMenus.forEach(function(subMenu, subIndex) {
+                    if (subIndex !== index) {
+                        subMenu.style.display = "none";
+                    }
+                });
+                
+                // Alternar el estado del submenú actual
+                if (!isOpen) { // Verificar si el submenú no está abierto
+                    subMenus[index].style.display = "block";
+                    isOpen = true; // Actualizar el estado de la variable de control
+                } else {
+                    subMenus[index].style.display = "none";
+                    isOpen = false; // Actualizar el estado de la variable de control
+                }
+            });
+          
+
             item.addEventListener("mouseenter", function() {
               subMenus[index].style.display = "block";
             });
@@ -309,19 +335,10 @@ https://www.tooplate.com/view/2097-pop
                 subMenus[index].style.display = "block";
               }
             });
-          });
-        });
-
-         // Mostrar y ocultar submenús cuando se toca sobre los botones
-         menuItems.forEach(function(item, index) {
-          item.addEventListener("touchstart", function() {
-              subMenus[index].style.display = "block";
-          });
           
-          item.addEventListener("touchend", function() {
-              subMenus[index].style.display = "none";
           });
       });
+      
     </script>
 
 </body>
