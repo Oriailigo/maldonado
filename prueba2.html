@@ -3,53 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="prueba2.css">
+    <link rel="stylesheet" href="menuHamburguesa.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="menu">
-        <button class="hamburger" aria-label="Menú">
-          <span class="line1"></span>
-          <span class="line2"></span>
-          <span class="line3"></span>
-        </button>
-        <ul class="menu-list">
-          <li tabindex="0" class="menu-item">Previo a la inundación
-            <ul tabindex="0" class="sub-menu">
-              <li tabindex="0"><button  class="sub-menu-item" onclick="location.href='pagina1.html';">Aprendiendo sobre las inundaciones</button></li>
-              <li tabindex="0"><button  class="sub-menu-item" onclick="location.href='pagina2.html';">Por qué nos inundamos</button></li>
-              <li tabindex="0"><button  class="sub-menu-item" onclick="location.href='pagina3.html';">Conociendo tu territorio</button></li>
+    <div id="tm-bg"></div>
+    <div id="tm-wrap">
+        <div class="menu">
+            <button class="hamburger" aria-label="Menú">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+            </button>
+            <ul class="menu-list">
+                <li>
+                    <button tabindex="0" class="btn-color">Acerca del proyecto</button>
+                    
+                </li>
+                <li class="menu-item">
+                    <button tabindex="0" class="btn-color">Previo a la inundación</button>
+                    <ul class="sub-menu">
+                    <li><button class="btn-color subitem-color" tabindex="0" onclick="location.href='pagina1.html';">Aprendiendo sobre las inundaciones</button></li>
+                    <li><button class="btn-color subitem-color" tabindex="0" onclick="location.href='pagina2.html';">Por qué nos inundamos</button></li>
+                    <li><button class="btn-color subitem-color" tabindex="0" onclick="location.href='pagina3.html';">Conociendo tu territorio</button></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <button tabindex="0" class="btn-color">Durante la inundación</button>
+                    <ul class="sub-menu">
+                    <li><button class="btn-color subitem-color" tabindex="0" onclick="location.href='pagina4.html';">Adónde acudir</button></li>
+                    <li><button class="btn-color subitem-color" tabindex="0" onclick="location.href='pagina5.html';">Recomendaciones de cómo actuar</button></li>
+                    <li><button class="btn-color subitem-color" tabindex="0" onclick="location.href='pagina6.html';">Teléfonos y centros de encuentro</button></li>
+                    <li><button class="btn-color subitem-color" tabindex="0" onclick="location.href='pagina7.html';">Protocolos de actuación</button></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <button tabindex="0" class="btn-color">Después de la inundación</button>
+                    <ul class="sub-menu">
+                    <li><button class="btn-color subitem-color" tabindex="0" onclick="location.href='pagina8.html';">Higiene</button></li>
+                    <li><button class="btn-color subitem-color" tabindex="0" onclick="location.href='pagina9.html';">Daños estructurales</button></li>
+                    </ul>
+                </li>
             </ul>
-          </li>
-          <li tabindex="0" class="menu-item">Durante la inundación
-            <ul class="sub-menu">
-              <li tabindex="0"><button class="sub-menu-item" onclick="location.href='pagina4.html';">Adónde acudir</button></li>
-              <li><button class="sub-menu-item" onclick="location.href='pagina5.html';">Recomendaciones de cómo actuar</button></li>
-              <li><button class="sub-menu-item" onclick="location.href='pagina6.html';">Teléfonos y centros de encuentro</button></li>
-              <li><button class="sub-menu-item" onclick="location.href='pagina7.html';">Protocolos de actuación</button></li>
-            </ul>
-          </li>
-          <li tabindex="0" class="menu-item">Después de la inundación
-            <ul class="sub-menu">
-              <li><button class="sub-menu-item" onclick="location.href='pagina8.html';">Higiene</button></li>
-              <li><button class="sub-menu-item" onclick="location.href='pagina9.html';">Daños estructurales</button></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      
+        </div>
+    </div>
       <script>
         document.addEventListener("DOMContentLoaded", function() {
             var hamburger = document.querySelector(".hamburger");
             var menuList = document.querySelector(".menu-list");
+            var menuItems = document.querySelectorAll(".menu-item");
+            var subMenus = document.querySelectorAll(".sub-menu");
             
             hamburger.addEventListener("click", function() {
               this.classList.toggle("open");
               menuList.classList.toggle("open");
             });
+            
+            // Mostrar y ocultar submenús cuando se posiciona sobre los botones
+            menuItems.forEach(function(item, index) {
+              item.addEventListener("mouseenter", function() {
+                subMenus[index].style.display = "block";
+              });
+              item.addEventListener("mouseleave", function() {
+                subMenus[index].style.display = "none";
+              });
+              
+              item.addEventListener("focus", function() {
+                subMenus[index].style.display = "block";
+              });
+              item.addEventListener("blur", function() {
+                subMenus[index].style.display = "none";
+              });
+              
+              item.addEventListener("keydown", function(event) {
+                if (event.key === "Enter" || event.key === " ") {
+                  subMenus[index].style.display = "block";
+                }
+              });
+            });
           });
-          
+
+           // Mostrar y ocultar submenús cuando se toca sobre los botones
+           menuItems.forEach(function(item, index) {
+            item.addEventListener("touchstart", function() {
+                subMenus[index].style.display = "block";
+            });
+            
+            item.addEventListener("touchend", function() {
+                subMenus[index].style.display = "none";
+            });
+        });
       </script>
-      
 </body>
 </html>

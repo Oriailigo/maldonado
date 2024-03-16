@@ -1,0 +1,145 @@
+.menu {
+    position: relative;
+    display: flex;
+    margin: auto 0;
+    margin-top: -3rem;
+  }
+  
+  .hamburger {
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+  
+  .line1,
+  .line2,
+  .line3 {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #f7f6f6;
+    margin: 5px auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .line2 {
+    opacity: 1;
+  }
+  
+  .menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    /* background: #f1f1f1; */
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+  }
+  
+  .hamburger.open .line1 {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .hamburger.open .line2 {
+    opacity: 0;
+  }
+  
+  .hamburger.open .line3 {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  .menu-list.open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+ 
+
+  
+  .menu-item {
+    cursor: pointer;
+    padding-bottom: 5px;
+  }
+  
+  .sub-menu {
+    display: none;
+    list-style: none;
+    margin-left:0px;
+    text-align: right;
+  }
+  
+  .menu-item:hover,
+  .menu-item:focus {
+    /* background-color: #8b8b8b; */
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-right: 0rem;
+    padding-left: 0rem ;
+  }
+  
+  .menu-item:hover .sub-menu,
+  .menu-item:focus .sub-menu {
+    display: block;
+  }
+  
+  /* #tm-wrap {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.721);
+} */
+
+/* #tm-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/index.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    transition: all 0.3s ease;
+} */
+
+
+.btn-color{
+        color: #fff;
+        background: #6e86e4;
+        background-color: #3f4757;
+        font-weight: 500;
+        padding: 0 20px;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        border-bottom: 1px solid white;
+        /* border-radius: 18px 18px 18px 18px; */
+        line-height: 38px;
+        width: 100%;
+        cursor: pointer;
+        text-align: left;
+}
+
+.btn-color:hover{
+    background-color:   #8b9df5;
+    color: black;
+}
+.subitem-color{
+    background: #5a6ab9af!important;
+    background-color: #3f47578b;
+}
+
+/* Estilos para ocultar el menú en dispositivos móviles */
+@media only screen and (min-width: 600px) {
+  .menu {
+      display: none;
+  }
+}
