@@ -141,6 +141,9 @@
         cursor: pointer;
         text-align: left;
 }
+.subitem-left{
+  margin-left: 2rem;
+}
 
 .btn-color:hover{
     background-color:   #8b9df5;
