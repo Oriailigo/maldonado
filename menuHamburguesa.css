@@ -144,7 +144,12 @@
 .subitem-left{
   margin-left: 0.5rem;
 }
-
+.btn-left{
+  margin-left: 1.2rem;
+}
+.sm-left{
+  margin-left: 1.2rem;
+}
 .btn-color:hover{
     background-color:   #8b9df5;
     color: black;
