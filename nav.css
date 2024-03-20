@@ -1,3 +1,9 @@
+:root {
+  --secondary-color: #E9C46A;
+  --bs-breadcrumb-divider-color: #6c757d;
+  --bs-breadcrumb-divider: "/";
+  --bs-breadcrumb-item-padding-x: 10px;
+}
 .navbar {
     background-color: black;
     color: white;
@@ -91,4 +97,40 @@
 
 .margen-b{
   margin-bottom:1rem ;
+}
+/*migas de pan */
+
+.breadcrumb-content{
+  display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.breadcrumb-item a {
+  text-decoration:none;
+  color: var(--secondary-color);
+}
+
+.active-item {
+  color: rgba(240, 255, 255, 0.88) !important;
+}
+ol{
+  list-style-type: none;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  float: left;
+  padding-right: var(--bs-breadcrumb-item-padding-x);
+  color: var(--bs-breadcrumb-divider-color);
+  content: var(--bs-breadcrumb-divider, "/");
+}
+.breadcrumb-nav {
+  display: block;
+}
+
+/* Estilos para ocultar el menú en dispositivos móviles */
+@media only screen and (max-width: 720px) {
+  .breadcrumb-nav {
+      display: none;
+  }
+ 
 }
