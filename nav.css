@@ -12,10 +12,12 @@
     left: 0;
     width: 100%;
     display: flex;
+    gap:2rem;
     /* padding: 10px 20px; */
     padding-top: 10px;
     padding-bottom: 20px;
-    justify-content: space-around;
+    padding-left: 4rem;
+    justify-content: flex-start;
   }
 
   .menu{
