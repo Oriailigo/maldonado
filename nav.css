@@ -3,6 +3,8 @@
   --bs-breadcrumb-divider-color: #6c757d;
   --bs-breadcrumb-divider: "/";
   --bs-breadcrumb-item-padding-x: 10px;
+/* contenedor del main */
+  --bs-gutter-x: 1.5rem;
 }
 .navbar {
     background-color: black;
@@ -135,4 +137,8 @@ ol{
       display: none;
   }
  
+}
+.content-pd{
+  padding-right: calc(var(--bs-gutter-x)* .5);
+  padding-left: calc(var(--bs-gutter-x)* .5);
 }

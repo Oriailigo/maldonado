@@ -1,3 +1,8 @@
+:root {
+/* contenedor del main */
+  --bs-gutter-x: 1.5rem;
+}
+
 .menu {
     position: relative;
     display: flex;
@@ -56,6 +61,8 @@
   .menu-list.open {
     opacity: 1;
     visibility: visible;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
   }
 
  
@@ -130,7 +137,7 @@
         border-bottom: 1px solid white;
         /* border-radius: 18px 18px 18px 18px; */
         line-height: 38px;
-        width: 100%;
+        width: 96%;
         cursor: pointer;
         text-align: left;
 }
