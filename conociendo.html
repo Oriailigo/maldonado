@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mapa de Google</title>
+
+<link rel="stylesheet" href="nav.css">
+<link rel="stylesheet" href="tabsMain.css">
+<link rel="stylesheet" href="fontawesome/css/fontawesome-all.min.css">                <!-- https://fontawesome.com/  iconos -->
+<link rel="stylesheet" href="css/myStyles.css"> 
+<link rel="stylesheet" href="menuHamburguesa.css"> 
+</head>
+<body>
+    <div id="tm-bg"></div>
+      <div id="tm-wrap">
+    <div class="navbar">
+
+        <!-- comienzo del menu hamburger -->
+        <div class="menu">
+            <button class="hamburger" aria-label="Menú">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+            </button>
+            <ul class="menu-list acomodar-items">
+                <li>
+                    <button tabindex="0" class="btn-color btn-left" onclick="location.href='index.html';">Acerca del proyecto</button>
+                    
+                </li>
+                <li class="menu-item">
+                    <button tabindex="0" class="btn-color btn-left">Previo a la inundación</button>
+                    <ul class="sub-menu sm-left ">
+                    <li class="left-sub-items"><button class="btn-color subitem-color subitem-left" tabindex="0" onclick="location.href='aprendiendo.html';">Aprendiendo sobre las inundaciones</button></li>
+                    <li class="left-sub-items"><button class="btn-color subitem-color subitem-left" tabindex="0" onclick="location.href='#';">Por qué nos inundamos</button></li>
+                    <li class="left-sub-items"><button class="btn-color subitem-color subitem-left" tabindex="0" onclick="location.href='conociendo.html';">Conociendo tu territorio</button></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <button tabindex="0" class="btn-color btn-left">Durante la inundación</button>
+                    <ul class="sub-menu sm-left">
+                    <li class="left-sub-items"><button class="btn-color subitem-color subitem-left" tabindex="0" onclick="location.href='#';">Adónde acudir</button></li>
+                    <li class="left-sub-items"><button class="btn-color subitem-color subitem-left" tabindex="0" onclick="location.href='#';">Recomendaciones de cómo actuar</button></li>
+                    <li class="left-sub-items"><button class="btn-color subitem-color subitem-left" tabindex="0" onclick="location.href='#';">Teléfonos y centros de encuentro</button></li>
+                    <li class="left-sub-items"><button class="btn-color subitem-color subitem-left" tabindex="0" onclick="location.href='#';">Protocolos de actuación</button></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <button tabindex="0" class="btn-color btn-left">Después de la inundación</button>
+                    <ul class="sub-menu sm-left">
+                    <li class="left-sub-items"><button class="btn-color subitem-color subitem-left" tabindex="0" onclick="location.href='#';">Higiene</button></li>
+                    <li class="left-sub-items"><button class="btn-color subitem-color subitem-left" tabindex="0" onclick="location.href='#';">Daños estructurales</button></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- fin del menu hamburger -->
+        <button class="bg-b navbar-left" onclick="window.location.href='index.html'">
+            <div class="col margen-b">
+              <p tabindex="0" class="text-white margin-p">Cuenca del arroyo <br> Maldonado</p>
+              <img height="10px" src="img/underline.png" class="img-fluid mt-1">
+              
+            </div>
+            
+            <div class="hero-image-wrap col-lg-6 col-12 mt-0 mt-lg-0">
+              <!-- <img width="250px" src="img/durante.jpg" class="hero-image img-fluid" alt="education online books"> -->
+              <img class="my-4" width="100%" height="60px" src="img/portada.png" alt="">
+            </div>
+          </button>
+        </div>
+        
+        <main class="content-pd">
+        <!-- 
+        <div class="breadcrumbs">
+          <button class="button-seccion border-button">Home</button>
+          <button class="button-seccion border-button">Aprendiendo sobre inundaciones</button>
+        </div>
+        -->
+        
+          <!-- Contenido principal aquí -->
+          <nav aria-label="breadcrumb" class="breadcrumb-nav">
+            <ol class="breadcrumb-content">
+              <li class="breadcrumb-item ">
+                 <a href="index.html">Home</a> 
+              </li>
+              
+              <li class="breadcrumb-item">
+                <a href="index.html">Previo a la inundación</a> 
+              </li>
+              
+              <li aria-current="page" class="breadcrumb-item active-item">
+                Conociendo tu territorio
+              </li>
+            </ol>
+          </nav>
+          <div class="content-main-des mg-top">
+              <h1 class="h1-color">Conociendo tu territorio</h1>
+          </div>
+
+          <!-- comienzo del mapa -->
+          <div class="tab_content">
+
+                <iframe src="https://www.google.com/maps/d/embed?mid=1rY94cOsgC8avbjPNrCvlOS1XJ7C4X-8&ehbc=2E312F" width="640" height="480" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+
+<footer>
+          <p class="small tm-copyright-text">Copyright &copy; <span class="tm-current-year">2024</span> Proyecto Maldonado. 
+          
+          Design: Oriana Ailigo</p>
+        </footer>
+      </main>
+
+      
+    </div>
+      <script src="tabsMain.js"></script>
+      <script>      
+
+        function setupFooter() {
+            var pageHeight = $('.tm-site-header-container').height() + $('footer').height() + 100;
+
+            var main = $('.tm-main-content');
+
+            if($(window).height() < pageHeight) {
+                main.addClass('tm-footer-relative');
+            }
+            else {
+                main.removeClass('tm-footer-relative');   
+            }
+        }
+
+        /* DOM is ready
+        ------------------------------------------------*/
+        $(function(){
+
+            setupFooter();
+
+            $(window).resize(function(){
+                setupFooter();
+            });
+
+            $('.tm-current-year').text(new Date().getFullYear());  // Update year in copyright           
+        });
+
+    </script> 
+        <!-- menu hamburguer -->
+        <script>
+
+
+
+          document.addEventListener("DOMContentLoaded", function() {
+              var hamburger = document.querySelector(".hamburger");
+              var menuList = document.querySelector(".menu-list");
+              var menuItems = document.querySelectorAll(".menu-item");
+              var subMenus = document.querySelectorAll(".sub-menu");
+              var tab = document.querySelector(".tab");
+              
+              hamburger.addEventListener("click", function() {
+                this.classList.toggle("open");
+                menuList.classList.toggle("open");
+                if (menuList.classList.contains("open")) {
+                  tab.style.zIndex = "-1"; // Cuando se abre el menú, establecer z-index en -1
+                } else {
+                    tab.style.zIndex = "1"; // Cuando se cierra el menú, establecer z-index en 1
+                }
+            
+              });
+              
+              // Mostrar y ocultar submenús cuando se posiciona sobre los botones
+              menuItems.forEach(function(item, index) {
+    
+    
+                var isOpen = false; // Variable de control para verificar si el submenú está abierto
+        
+                item.addEventListener("click", function() {
+                  // Cerrar todos los submenús excepto el actual
+                   // Ocultar todos los submenús
+                   subMenus.forEach(function(subMenu) {
+                            subMenu.classList.remove("open");
+                        });
+                        
+                        // Alternar el estado del submenú correspondiente
+                        subMenus[index].classList.toggle("open");
+                    });
+                    
+                    // Evitar que se cierre el submenú cuando se hace clic dentro de él
+                    subMenus[index].addEventListener("click", function(event) {
+                        event.stopPropagation();
+                    });
+              
+    
+                
+                item.addEventListener("keydown", function(event) {
+                  if (event.key === "Enter" || event.key === " ") {
+                    subMenus[index].style.display = "block";
+                  }
+                });
+              
+              });
+          });
+          
+        </script>
+
+</body>
+</html>
