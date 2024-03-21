@@ -60,6 +60,11 @@ border-radius: 2rem;
   .p-color-btn{
     color: #f2f3f7;
   }
+  .p-color-btn a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    
+  }
   .tab-btn:hover {
     background-color: #a5b4fc87;
   }
@@ -244,7 +249,26 @@ footer{
 }
 
 /* mapa */
-iframe{
+.mapa-tam iframe{
+  width: 800px;
+  height: 480px;
+}
+
+/* video */
+.video-tam iframe{
+  width: 400px;
+  height: 280px;
+}
+/* celular */
+
+@media (max-width: 768px) {
+/* mapa */
+.mapa-tam iframe{
   width: 330px;
   height: 480px;
+}
+.video-tam iframe{
+  width: 100%;
+  height: 100%;
+}
 }
