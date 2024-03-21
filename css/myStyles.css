@@ -243,4 +243,8 @@ footer{
   padding-bottom: 2rem;
 }
 
-
+/* mapa */
+iframe{
+  width: 330px;
+  height: 290px;
+}
