@@ -219,7 +219,7 @@ body {
   width: 100%;
   height: 0;
   padding-bottom: 56.25%; /* Proporción 16:9 para mantener el aspecto del mapa */
-  overflow: hidden;
+ 
 }
 
 .contenedor-mapa .mapa {
@@ -241,8 +241,17 @@ body {
 
 .ancho-mapa{
   width: 100%!important;
+  overflow-y: auto; /* Agrega un desplazamiento vertical cuando el contenido excede el tamaño del contenedor */
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
 }
 
+.marg-mapa{
+margin-right: 0.2rem;
+display: flex;
+justify-content: center;
+}
 /* Media query para dispositivos de pantalla más pequeña como tablets y móviles */
 @media only screen and (max-width: 768px) {
   .contenedor-mapa {
