@@ -238,3 +238,7 @@ body {
       height: 500px; /* Establece una altura fija para el mapa */
   }
 }
+
+.ancho-mapa{
+  width: 100%!important;
+}
