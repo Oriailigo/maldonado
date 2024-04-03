@@ -170,3 +170,71 @@
   }
  
 }
+
+/* Generar scroll y footer fijo*/
+
+main {
+  flex: 1; /* Esto permite que el área principal ocupe el espacio restante */
+  padding: 20px;
+  overflow-y: auto; /* Agrega un desplazamiento vertical cuando el contenido excede el tamaño del contenedor */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Hace que el cuerpo ocupe al menos el 100% de la altura de la ventana del navegador */
+}
+
+
+
+.contenedor-iframe {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 30%; /* Proporción 16:9 para videos de YouTube */
+  overflow: hidden;
+}
+
+.contenedor-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Media query para dispositivos de pantalla más pequeña como tablets y móviles */
+@media only screen and (max-width: 768px) {
+  .contenedor-iframe {
+      padding-bottom: 75%; /* Proporción 4:3 para dispositivos más pequeños */
+  }
+}
+
+/* MAPAAA*/
+.contenedor-mapa {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* Proporción 16:9 para mantener el aspecto del mapa */
+  overflow: hidden;
+}
+
+.contenedor-mapa .mapa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Estilos adicionales para pantallas de PC */
+@media only screen and (min-width: 768px) {
+  .contenedor-mapa {
+      padding-bottom: 0; /* Quita el relleno inferior */
+      height: 500px; /* Establece una altura fija para el mapa */
+  }
+}
