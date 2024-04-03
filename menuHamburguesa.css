@@ -257,4 +257,8 @@ justify-content: center;
   .contenedor-mapa {
     height: 900px; /* Establece una altura fija para el mapa */
   }
+  .ancho-mapa{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
