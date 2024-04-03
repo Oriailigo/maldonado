@@ -242,3 +242,10 @@ body {
 .ancho-mapa{
   width: 100%!important;
 }
+
+/* Media query para dispositivos de pantalla más pequeña como tablets y móviles */
+@media only screen and (max-width: 768px) {
+  .contenedor-mapa {
+    height: 500px; /* Establece una altura fija para el mapa */
+  }
+}
