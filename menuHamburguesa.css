@@ -250,6 +250,7 @@ body {
 .marg-mapa{
 margin-right: 0.2rem;
 display: flex;
+flex-direction: column;
 justify-content: center;
 }
 /* Media query para dispositivos de pantalla más pequeña como tablets y móviles */
