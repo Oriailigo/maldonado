@@ -272,3 +272,125 @@ footer{
   height: 100%;
 }
 }
+
+ul {
+  list-style-position: inside;  /* Alinea las viñetas (bullets) con el texto */
+  text-align: justify;          /* Justifica el texto dentro de cada ítem de la lista */
+}
+
+ul li {
+  text-align: justify;          /* Justifica el contenido de cada <li> */
+}
+.a-link{
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+ul li p{
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .buttons {
+      padding: 0 1rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  padding: 0 .8rem;
+}
+
+.go-up {
+  display: flex;
+  flex-basis: calc(35% - 1rem);
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .main-container-boton {
+      margin: 0 auto;
+      width: 50%;
+  }
+}
+
+.main-container-boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .boton {
+      display: inline-block;
+      padding: 1rem 3rem;
+      margin-bottom: 2rem;
+      font-size: 1.8rem;
+  }
+}
+
+.boton {
+  color: #fff;
+  
+  border: none;
+  border-radius: .8rem;
+  
+  font-weight: bold;
+  width: 95%;
+  
+ 
+  text-align: center;
+  text-transform: uppercase;
+  transition: transform 400ms ease-in-out, background-color 400ms ease-in-out;
+}
+
+.go-up a img {
+  animation: pulse 2s infinite;
+  padding: 1.5rem;
+  background-color: #004a9e;
+  border-radius: 100%;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* Tamaño normal */
+  }
+  50% {
+    transform: scale(1.1); /* Aumenta un 10% */
+  }
+  100% {
+    transform: scale(1); /* Vuelve al tamaño original */
+  }
+}
+
+.boton-info p {
+  font-size: 16px; /* Tamaño típico de un párrafo */
+  margin: 0; /* Elimina el margen superior e inferior si no es necesario */
+}
+
+.button-seccion{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+
+  .boton-info p {
+    font-size: 10px; /* Tamaño típico de un párrafo */
+    margin: 0; /* Elimina el margen superior e inferior si no es necesario */
+  }
+  .mostrar{
+    display: block;
+  }
+}
