@@ -42,14 +42,23 @@
    padding-left: 1rem;
   
 }
+.tab_content {
+  text-align: center; /* Centrará el contenido inline, como la imagen */
+}
+
+.tab_content p {
+  text-align: left; /* Para asegurar que los párrafos no se centren */
+}
+
 
 .tab_content{
   background-color: #3f47578b;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 17px;
+  padding-right: 17px;
  
   margin-bottom: 2rem;
-  border-radius:  0px 0px 18px 18px; 
+  border-radius:  18px 18px 18px 18px; 
+  border-top: 1px solid white; /* Modificado para agregar bordes de 1px */
   border-bottom: 1px solid white; /* Modificado para agregar bordes de 1px */
     border-left: 1px solid white; /* Modificado para agregar bordes de 1px */
     border-right: 1px solid white; /* Modificado para agregar bordes de 1px */
