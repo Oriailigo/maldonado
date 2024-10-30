@@ -34,17 +34,15 @@
 	
 	 width: 70%;
 	 margin: 0 auto;
-	 font-family: 'Roboto', sans-serif;
+	 /* font-family: 'Roboto', sans-serif; */
 	 line-height: 1.5;
-	 font-weight: 300;
+	 font-weight: bold;
 	 color: #888;
 	 -webkit-font-smoothing: antialiased;
    padding-left: 1rem;
   
 }
-.tab_content {
-  text-align: center; /* Centrará el contenido inline, como la imagen */
-}
+
 
 .tab_content p {
   text-align: left; /* Para asegurar que los párrafos no se centren */
@@ -182,6 +180,9 @@ footer{
 /* celular */
 
 @media (max-width: 768px) {
+  .h1-color{
+    font-size:1.5rem;
+  }
   .content-main-des{
     display: flex;
     flex-direction: column;

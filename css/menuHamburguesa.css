@@ -187,7 +187,11 @@ main {
   padding: 20px;
   overflow-y: auto; /* Agrega un desplazamiento vertical cuando el contenido excede el tamaño del contenedor */
 }
-
+@media (max-width: 768px) {
+  main {
+    padding: 0rem;
+  }
+}
 body {
   margin: 0;
   padding: 0;

@@ -145,4 +145,13 @@ ol{
   padding-left: calc(var(--bs-gutter-x)* .5);
   overflow: auto;
 }
-
+@media (max-width: 768px) {
+  .content-pd{
+    padding-right: 0rem;
+    padding-left: 0rem;
+   
+  }
+  .mg-top{
+    margin-top: 0px;
+  }
+}
