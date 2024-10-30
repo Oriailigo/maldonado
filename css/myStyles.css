@@ -50,7 +50,7 @@ border-radius: 2rem;
     width: 100%;
     border: 1px solid white; /* Modificado para agregar bordes de 1rem */
     color: #020617;
-    background-color: #f0f8ff00;
+    background-color: #eeeff0d6;;
     border-radius: 8px 18px 0px 0px;
     font-weight: 500;
     padding: 12px;
@@ -69,8 +69,12 @@ border-radius: 2rem;
     background-color: #a5b4fc87;
   }
   .tab-btn.active {
-    background-color: #c7d2fe4d;
+    background-color: #3f4757;
     border-bottom-style: none; /* Establecer el estilo del borde inferior como "none" */
+  }
+  .tab-btn p.active {
+   
+    color:#e9c46a!important;
   }
   
   .content-tab {
@@ -79,7 +83,7 @@ border-radius: 2rem;
   .content-tab.show {
     display: flex;
     gap: 14px;
-    background-color: #c7d2fe4d;
+    background-color: #eeeff0d6;
     border-radius: 0px 0px 8px 8px;
     border: 1px solid white; /* Modificado para agregar bordes de 1rem */
     border-top-style: none; /* Establecer el estilo del borde inferior como "none" */
@@ -411,4 +415,7 @@ a {
   .mostrar{
     display: block;
   }
+}
+.content-title{
+  color:#000000;
 }

@@ -127,8 +127,8 @@
  .current a {
  
 	 color: #fff;
-	 background: #6e86e4;;
-   background-color: #3f47578b;
+
+   color:#e9c46a;
 }
  
 .content-main-des{
@@ -153,7 +153,7 @@
   }
   
   .button-seccion:hover {
-    background-color: #a5b4fc87;
+    background-color: #3f4757;
     
     border-bottom-style: none!important;
   }
@@ -219,6 +219,6 @@ footer{
     border-radius: 18px 18px 18px 18px;
   }
   .button-seccion:active {
-    background-color: #a5b4fc87;
+    background-color: #3f4757;
   }
 }
