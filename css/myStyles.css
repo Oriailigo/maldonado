@@ -127,16 +127,20 @@ border-radius: 2rem;
   color: #020617;
   background-color: #f0f8ff93;
   border-radius: 8px 18px 0px 0px;
-  font-weight: 500;
+  font-weight: bolder;
   padding: 12px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   border-radius: 15px; /* Redondeado */
-  font-size: medium; /* Tamaño mediano */
+  font-size: 1.2rem; /* Tamaño mediano */
 }
 
 .button-seccion:hover {
   background-color: #a5b4fc87;
+}
+.button-seccion:active {
+  background-color: #a5b4fc87!important;
+  color:#e9c46a!important;
 }
 .content-buttons{
   display: flex;
@@ -291,7 +295,7 @@ ul {
 
 ul li {
   text-align: justify;          /* Justifica el contenido de cada <li> */
-  list-style-type: none;  /* Elimina los números o viñetas */
+  list-style-type: disc;   /* Elimina los números o viñetas */
     padding-left: 0;        /* Elimina el padding de la izquierda */
     margin-left: 0;  
 }
