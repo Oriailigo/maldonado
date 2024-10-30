@@ -183,6 +183,9 @@ footer{
 /* celular */
 
 @media (max-width: 768px) {
+  .tabs_item h4 {
+    font-size: 1.3rem!important;
+ }
   .h1-color{
     font-size:1.5rem;
   }
