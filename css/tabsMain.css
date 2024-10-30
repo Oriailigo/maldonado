@@ -35,11 +35,13 @@
 	 width: 70%;
 	 margin: 0 auto;
 	 /* font-family: 'Roboto', sans-serif; */
-	 line-height: 1.5;
+	 
 	 font-weight: bold;
 	 color: #888;
 	 -webkit-font-smoothing: antialiased;
    padding-left: 1rem;
+   line-height: 1.9;
+    letter-spacing: 1px;
   
 }
 
@@ -193,6 +195,8 @@ footer{
   .tab {
       width: 90%; /* Cambiar el ancho al 100% en dispositivos móviles */
       padding-right: 1rem;
+      line-height: 1.9;
+      letter-spacing: 1px;
   
   }
   .tab_content{
