@@ -56,7 +56,7 @@
 }
 
 .tab_content{
-  background-color: #3f47578b;
+  background-color: #eeeff0d6;
   padding-left: 17px;
   padding-right: 17px;
  
@@ -113,7 +113,7 @@
 }
  .tabs_item h4 {
 	 font-weight: bold;
-	 color: #f2f3f7;	 
+	 color: #000000;	 
 	 font-size: 20px;
 }
  .tabs_item img {
