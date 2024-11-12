@@ -50,6 +50,12 @@
 .tab_content p {
   text-align: left; /* Para asegurar que los párrafos no se centren */
 }
+.img-center{
+  display: flex;
+  text-align: center!important; /* Para asegurar que los párrafos no se centren */
+  justify-content: center!important;
+  gap:1rem;
+}
 .center-button{
   justify-content: center;
   padding-top:1rem ;
