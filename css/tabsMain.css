@@ -39,9 +39,10 @@
 	 font-weight: bold;
 	 color: #888;
 	 -webkit-font-smoothing: antialiased;
-   padding-left: 1rem;
+   
    line-height: 1.9;
     letter-spacing: 1px;
+    padding-left: 1rem;
   
 }
 
@@ -86,8 +87,8 @@
 }
  .tabs a {
 
-
-	 color: #f2f3f7;
+  background-color: #eeeff0d6;
+	 color: #000000;
 	 font-weight: 500;
 	 display: block;
 	 letter-spacing: 0;
@@ -125,9 +126,7 @@
 	 display: block;
 }
  .current a {
- 
-	 color: #fff;
-
+  background-color: #3f4757!important;
    color:#e9c46a;
 }
  
@@ -164,8 +163,23 @@
     text-align: center;
     font-size: 2.8rem;
   }
+
+ 
+
+  .h4-tam{
+    font-size: 1.8rem!important;
+  }
+  .h2-tam{
+    font-size: 1.6rem!important;
+  }
+  
   .content-description {
     color: #f2f3f7;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 1.9;
+    letter-spacing: 1px;
 }
 
 
@@ -189,6 +203,17 @@ footer{
   .h1-color{
     font-size:1.5rem;
   }
+  
+    .h4-tam {
+        font-size: 1.3rem!important;
+    }
+    .h2-tam{
+      font-size: 1.1rem!important;
+    }
+    .content-description {
+      font-size: 0.8rem!important;
+    }
+
   .content-main-des{
     display: flex;
     flex-direction: column;
@@ -219,6 +244,11 @@ footer{
     border-radius: 18px 18px 18px 18px;
   }
   .button-seccion:active {
-    background-color: #3f4757;
+    background-color: #3f4757!important;
   }
 }
+
+.tabs_item ul li .highlight-topografia {
+  background-color: #e9c46a;
+}
+

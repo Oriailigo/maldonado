@@ -49,8 +49,7 @@ border-radius: 2rem;
   .tab-btn {
     width: 100%;
     border: 1px solid white; /* Modificado para agregar bordes de 1rem */
-    color: #020617;
-    background-color: #eeeff0d6;;
+    background-color: #eeeff0d6;
     border-radius: 8px 18px 0px 0px;
     font-weight: 500;
     padding: 12px;
@@ -58,7 +57,7 @@ border-radius: 2rem;
     transition: background-color 0.3s ease;
   }
   .p-color-btn{
-    color: #000000;
+    color: #000000!important;
   }
   .p-color-btn a{
     text-decoration: none;
@@ -70,12 +69,13 @@ border-radius: 2rem;
   }
   .tab-btn.active {
     background-color: #3f4757;
+    color:#e9c46a!important;
     border-bottom-style: none; /* Establecer el estilo del borde inferior como "none" */
   }
-  .tab-btn p.active {
-   
-    color:#e9c46a!important;
-  }
+  .tab-btn.active .p-color-btn {
+    color: #e9c46a !important;
+}
+
   
   .content-tab {
     display: none;
@@ -128,8 +128,11 @@ border-radius: 2rem;
 
 .button-seccion {
   border: 1px solid white; /* Modificado para agregar bordes de 1px */
-  color: #020617;
-  background-color: #f0f8ff93;
+
+  animation: pulse 2s infinite;
+   
+  background-color: #204b7d;
+  color: #ffffff;
   border-radius: 8px 18px 0px 0px;
   font-weight: bolder;
   padding: 12px;
@@ -172,13 +175,13 @@ footer{
 
 @media (max-width: 768px) {
   .content-description ol{
-    margin-left: 0.5rem; /* Elimina el margen izquierdo */
-    padding-left: 0.5rem; /* Elimina el espacio de sangría predeterminado */
+    margin-left: 0.5rem!important; /* Elimina el margen izquierdo */
+    padding-left: 0.5rem!important; /* Elimina el espacio de sangría predeterminado */
   
   }
   .content-description ul{
-    margin-left: 0.5rem; /* Elimina el margen izquierdo */
-    padding-left: 0.5rem; /* Elimina el espacio de sangría predeterminado */
+    margin-left: 0.5rem!important; /* Elimina el margen izquierdo */
+    padding-left: 0.5rem!important; /* Elimina el espacio de sangría predeterminado */
   
   }
 .acomodar-items{
@@ -418,4 +421,14 @@ a {
 }
 .content-title{
   color:#000000;
+}
+.inicio-title{
+  background-color: #3f4757;
+    color: #e9c46a;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.highlight-topografia {
+  background-color: #e9c46a;
 }
