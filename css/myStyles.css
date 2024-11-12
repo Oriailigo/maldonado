@@ -128,11 +128,7 @@ border-radius: 2rem;
 
 .button-seccion {
   border: 1px solid white; /* Modificado para agregar bordes de 1px */
-
-  animation: pulse 2s infinite;
-   
-  background-color: #204b7d;
-  color: #ffffff;
+  color: #000000;
   border-radius: 8px 18px 0px 0px;
   font-weight: bolder;
   padding: 12px;
@@ -140,6 +136,12 @@ border-radius: 2rem;
   transition: background-color 0.3s ease;
   border-radius: 15px; /* Redondeado */
   font-size: 1.2rem; /* Tamaño mediano */
+}
+.button-inicio{
+    animation: pulse 2s infinite;
+     
+    background-color: #204b7d!important;
+    color: #ffffff!important;
 }
 
 .button-seccion:hover {
@@ -399,6 +401,10 @@ a {
 .boton-info p {
   font-size: 16px; /* Tamaño típico de un párrafo */
   margin: 0; /* Elimina el margen superior e inferior si no es necesario */
+}
+.boton-info{
+  background-color: #eeeff0d6;
+  color: #000000;
 }
 
 .button-seccion{
