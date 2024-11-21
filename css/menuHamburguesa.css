@@ -265,6 +265,7 @@ margin-right: 0.2rem;
 display: flex;
 flex-direction: column;
 justify-content: center;
+padding-bottom: 2rem;
 }
 /* Media query para dispositivos de pantalla más pequeña como tablets y móviles */
 @media only screen and (max-width: 768px) {
