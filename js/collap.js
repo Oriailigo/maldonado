@@ -1,15 +1,24 @@
-document.querySelectorAll('.image-wrapper').forEach((wrapper) => {
-    wrapper.addEventListener('click', toggleCollapsible);
-    wrapper.addEventListener('keypress', (event) => {
-      if (event.key === 'Enter') {
-        toggleCollapsible.call(wrapper);
-      }
-    });
+const imageWrappers = document.querySelectorAll('.image-wrapper');
+const collapsibleContents = document.querySelectorAll('.collapsible-content');
+
+imageWrappers.forEach((wrapper) => {
+  wrapper.addEventListener('click', () => toggleCollapse(wrapper));
+  wrapper.addEventListener('keypress', (event) => {
+    if (event.key === 'Enter') {
+      toggleCollapse(wrapper);
+    }
   });
-  
-  function toggleCollapsible() {
-    const collapsible = this.querySelector('.collapsible');
-    const isOpen = collapsible.style.maxHeight;
-    collapsible.style.maxHeight = isOpen ? null : collapsible.scrollHeight + "px";
-  }
-  
+});
+
+function toggleCollapse(selectedWrapper) {
+  const targetCollapseId = selectedWrapper.getAttribute('data-collapse');
+
+  // Ocultar todos los colapsables
+  collapsibleContents.forEach((content) => {
+    content.style.display = 'none';
+  });
+
+  // Mostrar el colapsable seleccionado
+  const targetCollapse = document.getElementById(targetCollapseId);
+  targetCollapse.style.display = 'block';
+}
