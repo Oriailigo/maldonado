@@ -584,3 +584,26 @@ a {
     margin-top: 10px;
   }
 }
+
+#info-content ul li {
+  text-align: justify;
+    list-style-type: none!important;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+
+ul li span{
+  font-weight:bolder!important;
+  color: black;
+}
+
+ul li p{
+  font-weight:normal!important;
+  color: black;
+}
+
+#info-title{
+  text-align: center;
+  color: #000000;
+}
