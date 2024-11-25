@@ -427,6 +427,11 @@ a {
 }
 
 @media (max-width: 768px) {
+ 
+  .image-container {
+    font-size: 0.8rem!important;
+
+  }
   .img-tam2-sx{
     width: 300px!important;
   }
@@ -461,6 +466,13 @@ a {
   display: flex;
   justify-content: space-around;
   gap: 20px;
+  /* estilos de letra */
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  
+  line-height: 1.9;
+  letter-spacing: 1px;
+  font-size: 19px;
   /* margin-bottom: 2rem; */
   /* padding: 20px; */
 }
@@ -488,7 +500,7 @@ a {
 
 .image-title {
   margin-top: 10px;
-  font-size: 0.9rem;
+  font-size: 1.50rem!important;
   text-align: center;
   font-weight: bold;
 }
@@ -621,4 +633,11 @@ ul li p{
 #info-title{
   text-align: center;
   color: #000000;
+}
+
+
+@media (max-width: 768px) {
+  .image-title {
+    font-size: 1rem!important;
+  }
 }
