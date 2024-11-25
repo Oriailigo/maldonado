@@ -427,7 +427,9 @@ a {
 }
 
 @media (max-width: 768px) {
-
+  .img-tam2-sx{
+    width: 300px!important;
+  }
   .boton-info p {
     font-size: 10px; /* Tamaño típico de un párrafo */
     margin: 0; /* Elimina el margen superior e inferior si no es necesario */
@@ -556,6 +558,17 @@ a {
 
 
 /* Responsive */
+@media (max-width: 1265px) {
+  .img-tam2-sx{
+    width: 400px;
+  }
+  .content-imgs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+    align-items: center
+    }
+}
 @media (max-width: 1127px) {
   .description-map{
     display: block;
@@ -563,6 +576,7 @@ a {
   .image-container {
     flex-direction: column;
     gap: 20px;
+
   }
 
   .image-wrapper {
