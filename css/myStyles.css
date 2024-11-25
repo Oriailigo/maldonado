@@ -459,7 +459,8 @@ a {
   display: flex;
   justify-content: space-around;
   gap: 20px;
-  padding: 20px;
+  /* margin-bottom: 2rem; */
+  /* padding: 20px; */
 }
 .description-map{
   display: none;
