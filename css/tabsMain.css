@@ -49,6 +49,7 @@
 
 .tab_content p {
   text-align: left; /* Para asegurar que los párrafos no se centren */
+  color: #000000;
 }
 .img-center{
   display: flex;
