@@ -1,0 +1,233 @@
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.text {
+    font-family: sans-serif;
+    color: #353a3bfb;
+}
+#mapid { 
+    background-color: #A8C0C1;
+    flex: 2;
+    height: 31.25rem;
+    min-width: 15.625rem;
+    outline: none;
+    padding: 1.875rem;
+    position: relative;
+    z-index: 1;
+ }
+ #desc {
+     background-color:#A8C0C1;
+     text-align: center;
+     flex-grow: 1;
+     flex-basis: 5.625rem;
+     margin:0 auto;
+     min-width: 15.625rem;
+     padding: 1.25rem;
+     height: 31.25rem;
+     padding-top: 2.5rem;
+ }
+ #info {
+    height:76%;
+    width: 90%;
+    border-style: groove;
+    border-color: #55F3A3;
+    background-color: #ffff;
+    flex: 1;
+    margin:0 auto;
+    min-width: 15.625rem;
+    padding: 1.25rem;
+    overflow-y: auto;
+}
+#title-info{
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+#separator{
+    border-top: 0.5rem solid #fff;
+    border-radius: 0.313rem;
+}
+ #boton_acc{
+     text-align: center;
+     background-color: aquamarine;
+ }
+.centrar{
+    display: flex;
+    justify-content: center;
+}
+.ocultar-visualmente { /*Hiding text*/
+    position:absolute;
+    overflow:hidden;
+    text-indent:-9999px;
+}
+
+
+
+.group-search{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 0.6rem;
+}
+.search,.search2{
+    width: 50%;
+}
+.search-title {
+    padding: 0.6rem;
+}
+.miheader {
+    overflow: hidden;
+    background-color: #00695C;
+    padding: 1.25rem 0.625rem;
+  }
+  
+  .miheader a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-size: 1.125rem; 
+    line-height: 1.563rem;
+    border-radius: 0.25rem;
+  }
+  
+  .miheader a.accesible {
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2.8rem;
+  }
+
+  .header-right {
+    float: right;
+} 
+    a.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 0.75rem;
+    left: 0%;
+    color: white;
+    padding: 0.938rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0.25rem 0.125rem;
+    cursor: pointer;
+}
+.mediaplayer{
+    padding: 0.5rem;
+}
+.myplayer{
+    display: flex;
+    height: 18rem;
+    width: 100%;
+}
+  @media screen and (max-width: 500px) {
+    .miheader a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+      
+      .header-right {
+        float: none;
+        display:flex;
+        justify-content: center;
+      }
+      a.button {
+        background-color: #4CAF50;
+        border: none;
+        text-align: center;
+        display: flex;
+        height: 100%;
+        width: 50%;
+        justify-content: center;
+        border-radius: 0.75rem;
+      }
+    .space-ajust {
+        padding: 1.1rem;
+    }
+      .swal2-popup {
+        font-size: 2rem;
+    }
+    .swal2-container {
+        position: absolute !important;
+    }
+}
+@media screen and (max-width: 320px){
+    #info{
+        height: 80%;
+    }
+}
+@media screen and (max-width:512px) {
+    .group-search{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .search,.search2{
+        width: 100%;
+    }
+}
+
+.h2-map {
+    margin: 0;           /* Elimina el margen por defecto */
+    padding: 0;  
+    font-size: 1.4rem;
+    
+}
+.h1-map {
+    margin: 0;           /* Elimina el margen por defecto */
+    padding: 0;  
+    font-size: 1.5rem;
+    
+}
+
+@media (max-width:768px) {
+    .h2-map {
+    
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:982px) {
+    .h2-map {
+    
+        font-size: 1.2rem;
+    }
+
+
+}
+
+@media (max-width:768px) {
+    .h1-map {
+    
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:982px) {
+    .h1-map {
+    
+        font-size: 1.5rem;
+    }
+
+
+}
+@media (max-width:984px) {
+#desc{
+    height: 53.25rem;
+    margin-bottom: -9rem;
+    padding-top: 0rem;
+}
+
+#info {
+    height:70%;
+}
+
+}

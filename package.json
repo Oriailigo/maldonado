@@ -1,0 +1,25 @@
+{
+  "name": "leaftMap",
+  "version": "1.0.0",
+  "description": "es un mapa de codigo abierto\r Code´s yani",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "sweetalert2": "^11.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/infosergio2020/leaftMap.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/infosergio2020/leaftMap/issues"
+  },
+  "homepage": "https://github.com/infosergio2020/leaftMap#readme"
+}

@@ -1,0 +1,65 @@
+.accordion {
+    width: 40rem;
+}
+.accordion h2 {
+    margin: -1px 0 0;
+    border: 1px solid #00695C;
+}
+.accordion p {
+    margin: 0;
+}
+.accordion__button {
+    position: relative;
+    display: block;
+    margin: -1px 0 0;
+    border: 1px solid #00695C;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    text-align: left;
+    color: #ffff;
+    font-size: 1rem;
+    background: #00695C;
+}
+.accordion__button:focus, .accordion__button:hover {
+    background: #00695cad;
+    color: #ffff;
+}
+.accordion__button:focus::after, .accordion__button:hover::after {
+    border-top-color: #ffff;
+}
+.accordion__button::after {
+    content: '';
+    position: absolute;
+    right: 1rem;
+    top: 0.65rem;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid #a8c0c1;
+}
+.accordion__button.expanded {
+    background: #00695C;
+    color: #ffff;
+}
+.accordion__button.expanded::after {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid #ffff;
+    border-top: none;
+}
+.accordion__section {
+    border-left: 1px solid #00695C;
+    border-right: 1px solid #00695C;
+    padding: 1rem;
+    background: #b2cfcc;
+    max-height: 0vh;
+    overflow: hidden;
+    padding: 0;
+}
+.accordion__section.open {
+    max-height: 100vh;
+    overflow: auto;
+    padding: 1.25em;
+    visibility: visible;
+}
