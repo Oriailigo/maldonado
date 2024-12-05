@@ -229,7 +229,7 @@ footer{
 
 }
   .tab {
-      width: 90%; /* Cambiar el ancho al 100% en dispositivos móviles */
+      width: 70%; /* Cambiar el ancho al 100% en dispositivos móviles */
       padding-right: 1rem;
       line-height: 1.9;
       letter-spacing: 1px;

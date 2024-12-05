@@ -209,6 +209,7 @@
     
         font-size: 1.2rem;
     }
+ 
 }
 
 @media (max-width:982px) {
@@ -230,4 +231,13 @@
     height:70%;
 }
 
+}
+
+@media (max-width: 768px) {
+    .tab {
+        /* width: 90%; */
+        padding-right: 1rem;
+        line-height: 1.9;
+        letter-spacing: 1px;
+    }
 }
