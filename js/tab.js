@@ -1,5 +1,4 @@
 const tabButtons = document.querySelectorAll('.tab-btn')
-
 tabButtons.forEach((tab) => {
   tab.addEventListener('click', () => tabClicked(tab))
 })

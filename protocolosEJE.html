@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cont-conter">
+        <div class="container-divs">
+          <div class="image-container">
+            <img src="img/mapa-barrio.jpg" alt="Mapa interactivo ">
+            <div class="interactive-div div-3"  role="button" aria-label="Barrio Aeropuerto." tabindex="0" data-content="<ul><li><span>Barrio</span>: Aeropuerto</li><li><span>Centro Comunal:</span> Villa Elvira"></div>
+            <div class="interactive-div div-4" role="button" aria-label="Barrio La noventa." tabindex="0" data-content="<ul><li><span>Barrio</span>: La 90</li><li><span>Centro Comunal:</span> Villa Elvira</li><li><span>Peligrosidad:</span> Presenta zonas de mu"></div>
+            <div class="interactive-div div-2" role="button" aria-label="Barrio los robles." tabindex="0" data-content="<ul><li><span>Barrio</span>: Los Robles</li><li><span>Centro Comunal:</span> Altos "></div>
+            <div class="interactive-div div-1" role="button" aria-label="Barrio puente de fierro." tabindex="0" data-content="<ul><li><span>Barrio</span>: Puente de Fierro</li><li><span>Centro Comunal:</span> Altos de San Lorenzo</li>"></div>                   
+          </div>
+           <!-- Select visible solo en modo celular -->
+           <select class="info-select hidden-on-desktop" id="info-select" tabindex="0">
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="info1" data-content="<ul><li><span>Barrio</span>: Puente de Fierro</li><li><span>Centro Comunal:</span> Altos de San Lor">
+              Puente de Fierro
+            </option>
+            <option value="info2" data-content="<ul><li><span>Barrio</span>: Los Robles</li><li><span>Centro Comunal:</span> Altos de San Lorenzo</li><li><span>Peligrosidad:">
+                    Los Robles
+            </option>
+            <option value="info3" data-content="<ul><li><span>Barrio</span>: Aeropuerto</li><li><span>Centro Comunal:</span> Villa Elvira</li><li><span>Peligrosidad:</span> .">
+                Aeropuerto
+            </option>
+            <option value="info4" data-content=" <ul><li><span>Barrio</span>: La 90</li><li><span>Centro Comunal:</span> Villa Elvira</li><li><span>Peligrosidad:</span> Presenta zonas de muy alta peligrosidad. ">
+                La 90
+            </option>
+          </select> 
+           <!-- mostrar info -->
+          <div class="info-container hidden" id="info-container">
+            <div><h4 id="info-title">Información</h4>
+            </div>
+            <div id="info-content" tabindex="0"></div>
+          </div>
+        </div>
+        </div>
+       
+</body>
+</html>
