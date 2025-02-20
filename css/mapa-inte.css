@@ -83,8 +83,8 @@
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     /* estilos de letra */
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+    font-family: "Arial", Helvetica, sans-serif;
+    font-weight: 300;
     
     line-height: 1.9;
     letter-spacing: 1px;

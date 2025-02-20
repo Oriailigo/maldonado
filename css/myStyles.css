@@ -233,10 +233,10 @@ footer{
     flex-direction: column;
     gap: 1rem; 
     }
-    svg{
+    /* svg{
       display: none;
     
-      }
+      } */
       .img-ancho {
         display: none;
     }
@@ -467,7 +467,7 @@ a {
   justify-content: space-around;
   gap: 20px;
   /* estilos de letra */
-  font-family: 'Roboto', sans-serif;
+  font-family: "Arial", Helvetica, sans-serif;
   font-weight: bold;
   
   line-height: 1.9;
@@ -509,8 +509,8 @@ a {
   padding: 20px;
   border-top: 1px solid #ccc;
   /* estilos de letra */
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
+  font-family: "Arial", Helvetica, sans-serif;
+  font-weight: 300;
   
   line-height: 1.9;
   letter-spacing: 1px;
@@ -652,5 +652,111 @@ ul li p{
 @media (max-width: 768px) {
   .image-title {
     font-size: 1rem!important;
+  }
+}
+
+/* nueva version de los 3 botones: */
+
+.botonesse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* Botones redondos */
+.btn-round {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #004a9e;
+  border-radius: 50%;
+  flex-shrink: 0;
+  min-width: 50px; /* Evita que desaparezcan */
+  min-height: 50px;
+}
+
+/* Íconos dentro de los botones */
+.btn-round svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+/* Botón rectangular (principal) */
+.btn-rectangle {
+  display: flex;
+  flex-direction: row; /* Texto a la izquierda, icono a la derecha */
+  align-items: center;
+  justify-content: center;
+  background-color: #004a9e;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  gap: 10px;
+  flex-shrink: 0;
+  text-align: left;
+  min-width: 200px;
+  max-width: 250px;
+  height: 50px;
+  white-space: nowrap; /* Evita que el texto se corte */
+}
+
+/* Ícono dentro del botón */
+.btn-rectangle svg {
+  width: 30px;
+  height: 30px;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .botonesse {
+      gap: 0.8rem;
+  }
+  .btn-round {
+      width: 40px;
+      height: 40px;
+      min-width: 40px;
+      min-height: 40px;
+  }
+  .btn-round svg {
+      width: 20px;
+      height: 20px;
+  }
+  .btn-rectangle {
+      font-size: 14px;
+      padding: 8px 12px;
+      height: 45px;
+  }
+}
+
+/* Modo cuadrado cuando la pantalla es muy pequeña */
+@media (max-width: 500px) {
+  .btn-rectangle {
+      flex-direction: column; /* Ícono pasa abajo */
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      height: 80px;
+      min-width: unset;
+      border-radius: 10px;
+      padding: 5px;
+      text-align: center;
+      white-space: normal; /* Permite que el texto se divida en varias líneas */
+  }
+  .btn-rectangle span {
+      font-size: 12px;
+      text-align: center;
+  }
+  .btn-rectangle svg {
+      width: 25px;
+      height: 25px;
   }
 }

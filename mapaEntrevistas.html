@@ -216,37 +216,32 @@
                          
             </div> <!-- / tab_content -->
         </div> <!-- / tab -->
-        <div class="buttons">
-          <div class="go-up">
-            <a role="button" tabindex="0" aria-label="Regresar a la barra de navegación." alt="Botón para regresar a la barra de navegación." href="#init">
-                <img loading="lazy" width="25px" height="25px" src="https://conciencia-inundaciones.linti.unlp.edu.ar/static/img/general/arrow-up.svg" alt="imagen del botón para regresar a la barra de navegación.">
-            </a>
-          </div>   
-          <!-- End Tap Target Structure -->
-          <div class="main-container-boton">
-            <!-- <div class="main-container-boton tooltip"> -->
-            <a role="button" tabindex="0" aria-label="Volver a la página principal." alt="Botón para volver la página principal." class="boton verde-4" href="/">
-              <div class="boton-info button-seccion">
-                <p>Volver a la página principal</p> <svg class="mostrar" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 24 24">
-                  <path d="M 12 2.0996094 L 1 12 L 4 12 L 4 21 L 11 21 L 11 15 L 13 15 L 13 21 L 20 21 L 20 12 L 23 12 L 12 2.0996094 z M 12 4.7910156 L 18 10.191406 L 18 11 L 18 19 L 15 19 L 15 13 L 9 13 L 9 19 L 6 19 L 6 10.191406 L 12 4.7910156 z"></path>
-                  </svg>
-              </div>
-            </a>
-            
-            <!-- <span class="tooltiptext">Botón para volver a la página principal.</span> -->
-          </div>      
-          <div class="go-up">
-            <a role="button" tabindex="0" aria-label="Volver a la página anterior." onclick="history.back()">
-                <img loading="lazy" height="25px" width="25px" src="https://conciencia-inundaciones.linti.unlp.edu.ar/static/img/general/backArrow.svg" alt="imagen del botón para regresar a la página anterior.">
-            </a>
-          </div>       
+        <div class="botonesse">
+          <!-- Botón izquierdo (Flecha a la izquierda) -->
+          <a class="btn-round" role="button" tabindex="0" onclick="history.back()" aria-label="Volver a la página anterior">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="11" fill="#004a9e"/>
+                  <path d="M16 12H8M8 12L12 16M8 12L12 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </a>
+      
+          <!-- Botón central (Volver a la página principal) -->
+          <a class="btn-rectangle" role="button" tabindex="0" href="/" aria-label="Volver a la página principal">
+              <span>Volver a la página</span>
+              <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M 12 2.1 L 1 12 L 4 12 L 4 21 L 11 21 L 11 15 L 13 15 L 13 21 L 20 21 L 20 12 L 23 12 L 12 2.1 z M 12 4.8 L 18 10.2 L 18 11 L 18 19 L 15 19 L 15 13 L 9 13 L 9 19 L 6 19 L 6 10.2 L 12 4.8 z" fill="white"/>
+              </svg>
+          </a>
+      
+          <!-- Botón derecho (Flecha hacia arriba) -->
+          <a class="btn-round" role="button" tabindex="0" href="#init" aria-label="Regresar a la barra de navegación">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="11" fill="#004a9e"/>
+                  <path d="M12 16V8M12 8L8 12M12 8L16 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </a>
       </div>
-
-          <footer>
-        <p class="small tm-copyright-text">Copyright &copy; <span class="tm-current-year">2024</span> Proyecto Maldonado. 
-        
-        Design: Oriana Ailigo</p>
-      </footer>
+       
       
     </div>
     
@@ -254,35 +249,7 @@
     </div>
 
       
-      <script>      
-
-        function setupFooter() {
-            var pageHeight = $('.tm-site-header-container').height() + $('footer').height() + 100;
-
-            var main = $('.tm-main-content');
-
-            if($(window).height() < pageHeight) {
-                main.addClass('tm-footer-relative');
-            }
-            else {
-                main.removeClass('tm-footer-relative');   
-            }
-        }
-
-        /* DOM is ready
-        ------------------------------------------------*/
-        $(function(){
-
-            setupFooter();
-
-            $(window).resize(function(){
-                setupFooter();
-            });
-
-            $('.tm-current-year').text(new Date().getFullYear());  // Update year in copyright           
-        });
-
-    </script> 
+    
         <!-- menu hamburguer -->
         <script>
 
