@@ -468,7 +468,7 @@ a {
   gap: 20px;
   /* estilos de letra */
   font-family: "Arial", Helvetica, sans-serif;
-  font-weight: bold;
+  
   
   line-height: 1.9;
   letter-spacing: 1px;
@@ -476,6 +476,9 @@ a {
   /* margin-bottom: 2rem; */
   /* padding: 20px; */
 }
+
+
+
 .description-map{
   display: none;
 }
@@ -487,10 +490,11 @@ a {
 }
 
 .image-wrapper img {
-  width: 15rem;
-  height: auto;
+  width: 100%; /* Hace que ambas imágenes ocupen el 100% del contenedor */
+    height: 250px; /* Ajusta un tamaño fijo para ambas imágenes */
+    object-fit: cover; /* Recorta la imagen sin deformarla */
+    border-radius: 8px; /* Opcional: Bordes redondeados */
   border: 2px solid #ccc;
-  border-radius: 8px;
   transition: transform 0.3s;
 }
 
