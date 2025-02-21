@@ -33,7 +33,7 @@
   }
   
   .menu-list {
-    list-style: none;
+    list-style: none!important;
     padding: 0;
     margin: 20px 0;
     /* background: #f1f1f1; */
@@ -44,6 +44,10 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease;
+   
+  }
+  .menu-list ul{
+    list-style: none;
   }
   
   .hamburger.open .line1 {
@@ -70,6 +74,7 @@
   
   .menu-item {
     cursor: pointer;
+    list-style: none;
   }
   
   .sub-menu {
