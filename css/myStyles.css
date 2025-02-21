@@ -498,9 +498,7 @@ a {
   transition: transform 0.3s;
 }
 
-.image-wrapper:hover img {
-  transform: scale(1.1);
-}
+
 
 .image-title {
   margin-top: 10px;

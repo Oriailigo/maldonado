@@ -30,7 +30,7 @@
  .tab {
 	
 	 position: relative;
-	 overflow: hidden;
+	 /* overflow: hidden; */
 	
 	 width: 70%;
 	 margin: 0 auto;
