@@ -94,6 +94,7 @@ border-radius: 2rem;
   }
   .content-description{
     color: #000000!important;
+    
 }
 
 .content-description li{
@@ -643,7 +644,7 @@ ul li span{
 }
 
 ul li p{
-  font-weight:normal!important;
+  
   color: black;
 }
 
