@@ -58,6 +58,8 @@ border-radius: 2rem;
   }
   .p-color-btn{
     color: #000000!important;
+    line-height: 1.9;
+    letter-spacing: 1px;
   }
   .p-color-btn a{
     text-decoration: none;
