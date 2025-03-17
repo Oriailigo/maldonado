@@ -455,6 +455,16 @@ a {
     text-align: center;
     font-size: 1.8rem;
 }
+.inicio-titles{
+  color: #e9c46a;
+  font-size: 1.8rem;
+}
+@media (max-width: 768px) {
+  .inicio-titles{
+   
+    font-size: 1.2rem;
+  }
+}
 
 .highlight-topografia {
   background-color: #e9c46a;

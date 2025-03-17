@@ -1,0 +1,135 @@
+.main-card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.container-juego {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+@media (min-width: 931px) and (max-width: 1270px) {
+    .container-juego {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+    }
+}
+@media (max-width: 932px) {
+ 
+    .container-juego {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
+    }
+}
+.card {
+    height: 400px;
+    
+    box-shadow: 5px 5px 20px #000;
+    overflow: hidden;
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+.main-card img {
+    border-radius: 2rem;
+    max-width: 100%;
+    object-fit: initial;
+}
+
+.img-juego {
+    height: 400px;
+    width: 100%!important;
+    border-radius: 3px;
+    margin-right: 0px!important;
+}
+
+img {
+    aspect-ratio: attr(width) / attr(height);
+}
+
+.intro {
+    padding: 0.5rem;
+    height: 50%;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgba(27, 27, 27, 0.5);
+    color: #fff;
+    bottom: -20rem;
+    transition: 0.5s;
+}
+
+/* transicion */
+.esconder-detail {
+    font-size: 20px;
+    margin: 20px 0;
+    visibility: hidden;
+    opacity: 0;
+}
+.card:hover .esconder-detail {
+    opacity: 1;
+    visibility: visible;
+}
+.card:hover {
+    cursor: pointer;
+  }
+  .card:hover .intro {
+    height: 100%;
+    bottom: 0rem;
+    background: #000;
+  }
+
+.card:hover p {
+    opacity: 1;
+    visibility: visible;
+}
+
+.card:hover img {
+    transform: scale(1.1) rotate(-2deg);
+  }
+
+
+/* Ajustes en pantallas pequeñas o medianas */
+.intro h2 {
+    font-size: 1.5rem; /* Tamaño reducido en dispositivos más pequeños */
+    line-height: 1.5; /* Elimina el espacio adicional entre líneas */
+}
+
+.intro p {
+    font-size: 0.8rem;
+    margin-bottom: 0rem;
+}
+
+/* Ajustes en pantallas más grandes */
+@media (min-width: 768px) {
+    .intro h2 {
+        font-size: 1.3rem !important; /* Reducir tamaño del título en pantallas grandes */
+    }
+    .intro p {
+        font-size: 1rem !important; /* Reducir tamaño del texto en pantallas grandes */
+        color: #fff;
+       
+        
+    }
+}
+
+/* Ajuste del botón */
+.boton a {
+    font-size: 1rem;
+    /* text-align: center; Centra el texto dentro del botón */
+    padding: 0.5rem;
+    background-color: #007bff;
+    border-radius: 0.5rem;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+  
+    margin-left:-5rem;
+}
+
+/* Hover en el botón */
+.boton a:hover {
+    background-color: #0056b3;
+}
