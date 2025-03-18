@@ -64,7 +64,8 @@ import { barrioJardin,villaElvira,parqueCasteli,Tolosa,LosHornos,estadioMaradona
         id: 'mapbox/streets-v10',
         tileSize: 512,
         zoomOffset: -1,
-        accessToken: 'pk.eyJ1IjoibWl6enkyMDIiLCJhIjoiY2t0aHVtNWI0MHZuODJ3dWU2OGdjZjBxMiJ9.Z5oB_qULFlnOpBwo10mT-A'
+        accessToken: 'pk.eyJ1IjoibWl6enkyMDIiLCJhIjoiY2xpdDEyZW44MWFsaDNlbHBwOHk3dnd3NyJ9.0IzS153wvgxljAKeNtHTsg'
+        
     }).addTo(mymap);
     
     //Add geojson 
